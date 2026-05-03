@@ -11,16 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Suraj portfolio home">
         <span class="brand-mark">SC</span>
-        <span>Suraj Kumar</span>
+        <span>Suraj Chandravanshi</span>
       </a>
 
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
@@ -35,6 +37,7 @@
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <a class="nav-cta" href="https://wa.me/919873922652" target="_blank" rel="noreferrer">WhatsApp</a>
       </nav>
     </header>
 
@@ -42,16 +45,22 @@
       <section class="hero">
         <div class="hero-copy reveal">
           <p class="eyebrow">Digital Marketing Specialist | UX & Product Enthusiast</p>
-          <h1>I Help Brands Grow with SEO & Ads 🚀</h1>
+          <h1>SEO, ads, and content that grow your brand.</h1>
           <p class="hero-text">
-I help businesses generate leads, increase traffic, and scale revenue using SEO, paid ads, and content systems.
-</p>
+            I help businesses increase visibility, generate leads, and build smarter marketing systems through SEO, paid ads, social media, and conversion-focused content.
+          </p>
           <div class="hero-actions">
-            <a class="button primary" href="https://wa.me/9873922652" target="_blank">
-Chat on WhatsApp
-</a>
-            <a class="button primary" href="#work">View Work</a>
+            <a class="button primary whatsapp-button" href="https://wa.me/919873922652" target="_blank" rel="noreferrer">
+              <span class="wa-dot">WA</span>
+              Chat on WhatsApp
+            </a>
+            <a class="button dark" href="#work">View Work</a>
             <a class="button secondary" href="assets/Suraj_Kumar_Chandravanshi_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+          </div>
+          <div class="hero-proof" aria-label="Professional proof points">
+            <span>SEO campaigns</span>
+            <span>Google & Meta ads</span>
+            <span>Client reporting</span>
           </div>
           <div class="hero-meta" aria-label="Key profile details">
             <span>Delhi, India</span>
@@ -65,6 +74,9 @@ Chat on WhatsApp
           <div class="availability">
             <strong>4+ years</strong>
             <span>SEO, ads, social media, and client growth</span>
+          </div>
+          <div class="visual-note">
+            <span>Available for roles, freelance projects, and international opportunities.</span>
           </div>
         </div>
       </section>
@@ -95,6 +107,35 @@ Chat on WhatsApp
           <p>
             I am a results-driven digital marketing professional with hands-on experience across SEO, paid advertising, social media management, client communication, WordPress content, and reporting. My work combines practical execution with curiosity for digital product design and user experience.
           </p>
+        </div>
+      </section>
+
+      <section class="section process-section">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Approach</span>
+          <h2>A clean growth process from audit to reporting.</h2>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span>01</span>
+            <h3>Audit</h3>
+            <p>Review website health, search visibility, competitors, content quality, and paid media opportunities.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>02</span>
+            <h3>Plan</h3>
+            <p>Build keyword, campaign, content, and reporting plans that match the business goal and budget.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>03</span>
+            <h3>Execute</h3>
+            <p>Launch SEO improvements, ads, social posts, email campaigns, WordPress content, and outreach work.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>04</span>
+            <h3>Improve</h3>
+            <p>Track results, optimize performance, report clearly, and keep improving what drives measurable growth.</p>
+          </article>
         </div>
       </section>
 
@@ -281,7 +322,7 @@ Chat on WhatsApp
       <section class="contact-section" id="contact">
         <div class="contact-copy reveal">
           <span class="section-kicker">Contact</span>
-          <h2>Let’s build sharper growth for your brand.</h2>
+          <h2>Let's build sharper growth for your brand.</h2>
           <p>
             I am available for digital marketing roles, freelance projects, collaborations, and international opportunities connected to marketing, UX, and product growth.
           </p>
@@ -296,18 +337,47 @@ Chat on WhatsApp
             <span>Phone</span>
             <strong>+91 99717 45398</strong>
           </a>
-          <a class="contact-link" href="https://linkedin.com/in/surajkumarchandravanshi" target="_blank" rel="noreferrer">
-            <span>LinkedIn</span>
-            <strong>linkedin.com/in/surajkumarchandravanshi</strong>
+          <a class="contact-link" href="https://wa.me/919873922652" target="_blank" rel="noreferrer">
+            <span>WhatsApp</span>
+            <strong>Message me directly</strong>
           </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>Suraj Kumar Chandravanshi</span>
-      <a href="#top">Back to top</a>
+      <div class="footer-brand">
+        <span>Suraj Kumar Chandravanshi</span>
+        <p>Digital Marketing Specialist | SEO, ads, social media, and client growth.</p>
+      </div>
+      <div class="footer-socials" aria-label="Social media links">
+        <a href="https://www.instagram.com/surajchandravanshi1008/" target="_blank" rel="noreferrer" aria-label="Instagram profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.5" cy="6.5" r="1.2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:Jaykarsuraj699@gmail.com" aria-label="Email Suraj">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16v12H4z"></path>
+            <path d="m4 7 8 6 8-6"></path>
+          </svg>
+        </a>
+        <a href="https://wa.me/919873922652" target="_blank" rel="noreferrer" aria-label="WhatsApp Suraj">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5.3 19 6.4 15.7a7.2 7.2 0 1 1 2.2 2.1z"></path>
+            <path d="M9.3 8.7c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4-.1.6l-.5.6c.6 1 1.5 1.8 2.6 2.4l.7-.8c.2-.2.4-.2.7-.1l1.7.8c.3.1.4.3.4.6v.5c0 .4-.2.7-.5.9-.6.4-1.4.5-2.2.3-2.9-.7-5.2-2.8-6.1-5.6-.3-.8-.2-1.5.2-2.1z"></path>
+          </svg>
+        </a>
+      </div>
+      <a class="back-top" href="#top">Back to top</a>
     </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/919873922652" target="_blank" rel="noreferrer" aria-label="Chat with Suraj on WhatsApp">
+      <span>WA</span>
+      <strong>WhatsApp</strong>
+    </a>
 
     <script src="script.js"></script>
   </body>
