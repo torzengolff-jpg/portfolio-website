@@ -190,6 +190,10 @@ h3 {
   font-size: clamp(1.05rem, 2vw, 1.34rem);
 }
 
+.mobile-hero-photo {
+  display: none;
+}
+
 .hero-actions,
 .hero-meta,
 .hero-proof {
@@ -885,6 +889,34 @@ h3 {
     display: none;
   }
 
+  .hero-visual {
+    display: none;
+  }
+
+  .mobile-hero-photo {
+    display: grid;
+    gap: 12px;
+    margin: 26px 0 4px;
+  }
+
+  .mobile-hero-photo img {
+    width: 100%;
+    max-height: 420px;
+    border: 1px solid rgba(15, 118, 110, 0.18);
+    border-radius: var(--radius);
+    object-fit: cover;
+    object-position: center 18%;
+    box-shadow: 0 22px 52px rgba(23, 25, 31, 0.14);
+  }
+
+  .mobile-hero-photo span {
+    padding: 12px 14px;
+    border-left: 3px solid var(--teal);
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.78);
+    font-weight: 700;
+  }
+
   .availability,
   .visual-note {
     position: static;
@@ -900,14 +932,13 @@ h3 {
   }
 
   .floating-whatsapp {
-    right: 14px;
-    bottom: 14px;
+    display: none;
   }
 
   .site-footer {
     grid-template-columns: 1fr;
     align-items: start;
-    padding-bottom: 84px;
+    padding-bottom: 28px;
   }
 }
 
@@ -955,13 +986,4 @@ h3 {
     flex: 1 1 145px;
   }
 
-  .floating-whatsapp {
-    min-height: 48px;
-    padding: 8px 12px 8px 8px;
-  }
-
-  .floating-whatsapp span {
-    width: 30px;
-    height: 30px;
-  }
 }
