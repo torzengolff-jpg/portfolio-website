@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suraj Kumar Chandravanshi | Digital Marketing Portfolio</title>
+    <title>Suraj Kumar Chandravanshi | Digital Marketing Specialist</title>
     <meta
       name="description"
-      content="Portfolio of Suraj Kumar Chandravanshi, a Delhi-based Digital Marketing Specialist focused on SEO, paid advertising, social media growth, and UX-minded product thinking."
+      content="Suraj Kumar Chandravanshi — Delhi-based Digital Marketing Specialist. 4+ years driving SEO growth, Google & Meta ad campaigns, and social media systems for brands."
     />
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://my-portfolio-rose-gamma-56.vercel.app/" />
+    <meta property="og:title" content="Suraj Kumar Chandravanshi | Digital Marketing Specialist" />
+    <meta property="og:description" content="4+ years driving SEO growth, Google & Meta ad campaigns, and social media systems. Open to roles in India, Germany, Australia & UAE." />
+    <meta property="og:image" content="https://my-portfolio-rose-gamma-56.vercel.app/assets/suraj-profile.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Suraj Kumar Chandravanshi | Digital Marketing Specialist" />
+    <meta name="twitter:description" content="4+ years driving SEO growth, Google & Meta ad campaigns, and social media systems. Open to roles in India, Germany, Australia & UAE." />
+    <meta name="twitter:image" content="https://my-portfolio-rose-gamma-56.vercel.app/assets/suraj-profile.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +29,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Suraj portfolio home">
         <span class="brand-mark">SC</span>
@@ -37,14 +48,13 @@
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <a class="nav-cta" href="https://wa.me/919873922652" target="_blank" rel="noreferrer">WhatsApp</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Digital Marketing Specialist | UX & Product Enthusiast</p>
+          <p class="eyebrow">Delhi · Open to Relocate · 4+ Years Experience</p>
           <h1>SEO, ads, and content that grow your brand.</h1>
           <p class="hero-text">
             I help businesses increase visibility, generate leads, and build smarter marketing systems through SEO, paid ads, social media, and conversion-focused content.
@@ -62,9 +72,9 @@
             <a class="button secondary" href="assets/Suraj_Kumar_Chandravanshi_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
           </div>
           <div class="hero-proof" aria-label="Professional proof points">
-            <span>SEO campaigns</span>
-            <span>Google & Meta ads</span>
-            <span>Client reporting</span>
+            <span><i class="proof-icon">↗</i>SEO campaigns</span>
+            <span><i class="proof-icon">◎</i>Google &amp; Meta ads</span>
+            <span><i class="proof-icon">✦</i>Client reporting</span>
           </div>
           <div class="hero-meta" aria-label="Key profile details">
             <span>Delhi, India</span>
@@ -149,9 +159,13 @@
           <h2>Growth systems I can build and manage.</h2>
         </div>
         <div class="work-grid">
-          <article class="work-card reveal">
+          <article class="work-card work-card--seo reveal">
             <span class="tag">SEO Growth</span>
             <h3>Multi-client organic search campaigns</h3>
+            <div class="work-stat">
+              <strong>10+</strong>
+              <span>client websites managed end-to-end</span>
+            </div>
             <p>
               Managed on-page optimization, technical audits, keyword research, competitor analysis, and off-page link building for more than 10 client websites.
             </p>
@@ -162,9 +176,13 @@
             </ul>
           </article>
 
-          <article class="work-card reveal">
+          <article class="work-card work-card--paid reveal">
             <span class="tag coral">Paid Media</span>
             <h3>Google Ads and Meta campaign execution</h3>
+            <div class="work-stat">
+              <strong>Google + Meta</strong>
+              <span>campaigns planned, launched &amp; optimized</span>
+            </div>
             <p>
               Planned, monitored, and optimized paid campaigns across Google Ads, Facebook, and Instagram with a focus on performance, ROAS, and clear client reporting.
             </p>
@@ -175,9 +193,13 @@
             </ul>
           </article>
 
-          <article class="work-card reveal">
+          <article class="work-card work-card--social reveal">
             <span class="tag green">Social + Content</span>
             <h3>Brand visibility across active channels</h3>
+            <div class="work-stat">
+              <strong>B2B + B2C</strong>
+              <span>content strategies built and managed</span>
+            </div>
             <p>
               Built content calendars, managed daily posting, created visuals in Canva, published SEO-focused blogs on WordPress, and supported engagement growth for multiple brands.
             </p>
@@ -309,11 +331,12 @@
         <div class="learning reveal">
           <span class="section-kicker">Certifications</span>
           <h2>Professional development.</h2>
+          <div class="studying-badge">Currently studying</div>
           <ul>
-            <li>Google Digital Marketing Certificate - Skillshop, in progress</li>
-            <li>Meta Blueprint - Digital Advertising, in progress</li>
-            <li>HubSpot Content Marketing Certification, in progress</li>
-            <li>IELTS International English Certificate, preparation in progress</li>
+            <li>Google Digital Marketing Certificate — Skillshop</li>
+            <li>Meta Blueprint — Digital Advertising</li>
+            <li>HubSpot Content Marketing Certification</li>
+            <li>IELTS International English Certificate</li>
           </ul>
           <div class="languages">
             <span>Hindi: Native</span>
@@ -355,6 +378,13 @@
         <p>Digital Marketing Specialist | SEO, ads, social media, and client growth.</p>
       </div>
       <div class="footer-socials" aria-label="Social media links">
+        <a href="https://www.linkedin.com/in/suraj-kumar-chandravanshi" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
         <a href="https://www.instagram.com/surajchandravanshi1008/" target="_blank" rel="noreferrer" aria-label="Instagram profile">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <rect x="3" y="3" width="18" height="18" rx="5"></rect>
