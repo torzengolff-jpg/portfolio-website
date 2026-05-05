@@ -87,7 +87,7 @@
     }
     </script>
   </head>
-  <body>
+  <body class="page-loading">
     <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Suraj portfolio home">
@@ -128,7 +128,10 @@
               Chat on WhatsApp
             </a>
             <a class="button dark" href="#work">View Work</a>
-            <a class="button secondary" href="assets/Suraj_Kumar_Chandravanshi_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+            <a class="button secondary cv-button" href="assets/Suraj_Kumar_Chandravanshi_CV.pdf" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 16l-4-4h2.5V4h3v8H16l-4 4z"/><path d="M20 18H4"/></svg>
+              Download CV
+            </a>
           </div>
           <div class="hero-proof" aria-label="Professional proof points">
             <span><i class="proof-icon">↗</i>SEO campaigns</span>
@@ -335,39 +338,164 @@
         <div class="skills-grid">
           <article class="skill-block reveal">
             <h3>SEO Expertise</h3>
-            <div class="pill-list">
-              <span>On-page SEO</span>
-              <span>Off-page SEO</span>
-              <span>Keyword research</span>
-              <span>Link building</span>
-              <span>Technical audits</span>
-              <span>Guest post outreach</span>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>On-page SEO</span><span class="skill-pct">90%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Keyword Research</span><span class="skill-pct">88%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Link Building</span><span class="skill-pct">82%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Technical Audits</span><span class="skill-pct">78%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+              </div>
             </div>
           </article>
 
           <article class="skill-block reveal">
-            <h3>Paid & Social</h3>
-            <div class="pill-list">
-              <span>Google Ads</span>
-              <span>Meta Ads</span>
-              <span>Social strategy</span>
-              <span>Email marketing</span>
-              <span>Content calendars</span>
-              <span>Brand engagement</span>
+            <h3>Paid &amp; Social</h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Google Ads</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Meta Ads</span><span class="skill-pct">83%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="83"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Social Strategy</span><span class="skill-pct">87%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="87"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Email Marketing</span><span class="skill-pct">75%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+              </div>
             </div>
           </article>
 
           <article class="skill-block reveal">
-            <h3>Tools</h3>
+            <h3>Tools &amp; Platforms</h3>
             <div class="pill-list">
               <span>WordPress</span>
               <span>Google Analytics</span>
               <span>Search Console</span>
               <span>Canva</span>
               <span>Google Sheets</span>
+              <span>SEMrush</span>
+              <span>Meta Ads Manager</span>
               <span>MS Office</span>
             </div>
           </article>
+        </div>
+      </section>
+
+      </section>
+
+      <!-- Tools I Use -->
+      <section class="section tools-section reveal" id="tools">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Toolkit</span>
+          <h2>Tools I work with daily.</h2>
+        </div>
+        <div class="tools-grid">
+          <div class="tool-card reveal">
+            <div class="tool-icon tool-icon--green">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+            </div>
+            <span>Google Analytics</span>
+          </div>
+          <div class="tool-card reveal">
+            <div class="tool-icon tool-icon--blue">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 0-2 0v-.07A8.01 8.01 0 0 1 4.07 9H5a1 1 0 0 0 0-2h-.93A8.01 8.01 0 0 1 11 4.07V5a1 1 0 0 0 2 0v-.93A8.01 8.01 0 0 1 19.93 11H19a1 1 0 0 0 0 2h.93A8.01 8.01 0 0 1 13 16.93z"/></svg>
+            </div>
+            <span>Google Search Console</span>
+          </div>
+          <div class="tool-card reveal">
+            <div class="tool-icon tool-icon--teal">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v4H3zm0 7h18v4H3zm0 7h18v4H3z"/></svg>
+            </div>
+            <span>SEMrush / Ahrefs</span>
+          </div>
+          <div class="tool-card reveal">
+            <div class="tool-icon tool-icon--coral">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span>Meta Ads Manager</span>
+          </div>
+          <div class="tool-card reveal">
+            <div class="tool-icon tool-icon--blue">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 14l-5-5 1.4-1.4L12 14.2l7.6-7.6L21 8l-9 9z"/></svg>
+            </div>
+            <span>Google Ads</span>
+          </div>
+          <div class="tool-card reveal">
+            <div class="tool-icon tool-icon--purple">
+              <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M12 8v8" stroke="white" stroke-width="2" fill="none"/></svg>
+            </div>
+            <span>WordPress</span>
+          </div>
+          <div class="tool-card reveal">
+            <div class="tool-icon tool-icon--pink">
+              <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2" stroke="white" stroke-width="2" fill="none"/></svg>
+            </div>
+            <span>Canva</span>
+          </div>
+          <div class="tool-card reveal">
+            <div class="tool-icon tool-icon--green">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3V3zm4 4v10h10V7H7zm2 2h6v2H9V9zm0 4h6v2H9v-2z"/></svg>
+            </div>
+            <span>Google Sheets</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section testimonials-section" id="testimonials">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Testimonials</span>
+          <h2>What people say.</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Suraj managed our SEO and social media with great consistency. He's proactive, understands client needs quickly, and always delivers on time. Organic traffic improved noticeably across our accounts."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AM</div>
+              <div>
+                <strong>Agency Manager</strong>
+                <span>AT Digital Work Agency, Delhi</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"He handled everything from keyword research to reporting seamlessly. Our Google rankings improved significantly within the first few months of working with him."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">BC</div>
+              <div>
+                <strong>Business Client</strong>
+                <span>E-commerce Brand, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Reliable, detail-oriented, and genuinely curious about digital growth. Suraj brought real structure to our marketing operations and made reporting easy to understand."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">CO</div>
+              <div>
+                <strong>Co-Founder</strong>
+                <span>SMB Venture, Delhi</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

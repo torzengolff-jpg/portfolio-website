@@ -2,6 +2,12 @@ const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
 const header = document.querySelector("[data-header]");
 
+// Page-load fade-in animation
+window.addEventListener("load", () => {
+  document.body.classList.remove("page-loading");
+  document.body.classList.add("page-ready");
+});
+
 document.body.classList.add("animations-ready");
 
 navToggle?.addEventListener("click", () => {
@@ -18,6 +24,7 @@ nav?.addEventListener("click", (event) => {
   }
 });
 
+// Reveal on scroll
 const revealItems = document.querySelectorAll(".reveal");
 const observer = new IntersectionObserver(
   (entries) => {
@@ -30,8 +37,30 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.14 }
 );
-
 revealItems.forEach((item) => observer.observe(item));
+
+// Animated skill bars — trigger when skill section enters view
+const skillBarObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll(".skill-bar-fill").forEach((bar) => {
+          const target = bar.getAttribute("data-width") || "0";
+          // Small delay so CSS transition triggers after paint
+          requestAnimationFrame(() => {
+            setTimeout(() => { bar.style.width = target + "%"; }, 80);
+          });
+        });
+        skillBarObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+
+document.querySelectorAll(".skill-block").forEach((block) => {
+  skillBarObserver.observe(block);
+});
 
 // Scroll-progress bar
 const scrollBar = document.getElementById("scrollProgress");
@@ -60,7 +89,6 @@ const navObserver = new IntersectionObserver(
   },
   { rootMargin: "-40% 0px -55% 0px" }
 );
-
 sections.forEach((s) => navObserver.observe(s));
 
 window.addEventListener("scroll", () => {
