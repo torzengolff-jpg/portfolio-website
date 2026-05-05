@@ -1,9 +1,4 @@
-# robots.txt — Suraj Kumar Chandravanshi Portfolio
-# https://my-portfolio-rose-gamma-56.vercel.app/
-
-# Allow all search engine crawlers
 User-agent: *
 Allow: /
 
-# Point crawlers to the sitemap
 Sitemap: https://my-portfolio-rose-gamma-56.vercel.app/sitemap.xml
