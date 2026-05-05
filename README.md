@@ -37,6 +37,3 @@ To demonstrate my ability to build high-performing websites that help businesses
 
 
 
-(Add your website screenshot here)
-
-
