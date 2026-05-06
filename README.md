@@ -25,11 +25,9 @@ This is my personal portfolio website built to showcase my skills in web develop
 * Fast loading performance
 * SEO-friendly structure
 
-
 ## 🎯 Purpose
 
 To demonstrate my ability to build high-performing websites that help businesses grow online.
-
 
 ## 📸 Preview
 
