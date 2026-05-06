@@ -1102,9 +1102,9 @@ h3 {
 
 }
 
-/* Skills section kicker override — black instead of teal */
+/* Skills section kicker override — white for dark background */
 .skills-section .section-kicker {
-  color: var(--ink);
+  color: var(--white);
 }
    ============================================================ */
 @keyframes heroFadeUp {
