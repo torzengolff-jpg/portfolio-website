@@ -1102,8 +1102,10 @@ h3 {
 
 }
 
-/* ============================================================
-   PAGE-LOAD FADE-IN ANIMATION
+/* Skills section kicker override — black instead of teal */
+.skills-section .section-kicker {
+  color: var(--ink);
+}
    ============================================================ */
 @keyframes heroFadeUp {
   from { opacity: 0; transform: translateY(22px); }
@@ -1227,12 +1229,21 @@ body.page-ready .hero-visual {
 }
 
 .tool-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 8px;
+}
+
+.tool-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .tool-icon svg { width: 22px; height: 22px; }
