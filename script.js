@@ -2,12 +2,7 @@ const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
 const header = document.querySelector("[data-header]");
 
-// Page-load fade-in animation
-window.addEventListener("load", () => {
-  document.body.classList.remove("page-loading");
-  document.body.classList.add("page-ready");
-});
-
+// Page ready
 document.body.classList.add("animations-ready");
 
 navToggle?.addEventListener("click", () => {
