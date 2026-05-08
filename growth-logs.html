@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growth Logs — Suraj Kumar Chandravanshi</title>
+    <meta name="description" content="Notes, systems, experiments, and lessons from my journey in AI, SEO, digital marketing, and building publicly." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://my-portfolio-rose-gamma-56.vercel.app/growth-logs" />
+    <meta property="og:title" content="Growth Logs — Suraj Kumar Chandravanshi" />
+    <meta property="og:description" content="Notes, systems, experiments, and lessons from my journey in AI, SEO, digital marketing, and building publicly." />
+    <meta property="og:image" content="https://my-portfolio-rose-gamma-56.vercel.app/assets/suraj-profile.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="growth-logs.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="/" aria-label="Suraj portfolio home">
+        <span class="brand-mark">SC</span>
+        <span>Suraj Chandravanshi</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="/#work">Work</a>
+        <a href="/#services">Services</a>
+        <a href="/#experience">Experience</a>
+        <a href="/#skills">Skills</a>
+        <a href="/growth-logs" class="nav-active">Growth Logs</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- ═══ HERO ═══ -->
+      <section class="gl-hero">
+        <div class="gl-hero__orb gl-hero__orb--1" aria-hidden="true"></div>
+        <div class="gl-hero__orb gl-hero__orb--2" aria-hidden="true"></div>
+        <div class="gl-hero__content gl-reveal">
+          <div class="gl-hero__badge">
+            <span class="gl-hero__badge-dot"></span>
+            Journal · Est. 2024
+          </div>
+          <h1 class="gl-hero__title">Growth<br/>Logs</h1>
+          <p class="gl-hero__subtitle">Notes, systems, experiments, and lessons from my journey in AI, SEO, digital marketing, and building publicly.</p>
+          <div class="gl-hero__stats">
+            <div class="gl-hero__stat">
+              <strong>12</strong>
+              <span>Entries</span>
+            </div>
+            <div class="gl-hero__stat-divider"></div>
+            <div class="gl-hero__stat">
+              <strong>Weekly</strong>
+              <span>Updates</span>
+            </div>
+            <div class="gl-hero__stat-divider"></div>
+            <div class="gl-hero__stat">
+              <strong>Free</strong>
+              <span>Always</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ CONTROLS (SEARCH + FILTERS) ═══ -->
+      <section class="gl-controls">
+        <div class="gl-controls__inner">
+          <div class="gl-search-wrap">
+            <svg class="gl-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+            <input class="gl-search" id="gl-search" type="search" placeholder="Search articles…" aria-label="Search Growth Logs" autocomplete="off" />
+          </div>
+          <div class="gl-filters" role="tablist" aria-label="Filter by category">
+            <button class="gl-filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="gl-filter" data-filter="ai-workflows" role="tab" aria-selected="false">AI Workflows</button>
+            <button class="gl-filter" data-filter="seo-journey" role="tab" aria-selected="false">SEO Journey</button>
+            <button class="gl-filter" data-filter="build-logs" role="tab" aria-selected="false">Build Logs</button>
+            <button class="gl-filter" data-filter="linkedin-branding" role="tab" aria-selected="false">LinkedIn &amp; Branding</button>
+            <button class="gl-filter" data-filter="career-notes" role="tab" aria-selected="false">Career Notes</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ FEATURED ARTICLE ═══ -->
+      <section class="gl-featured-section gl-reveal" id="featured">
+        <div class="gl-featured-section__inner">
+          <div class="gl-section-label">
+            <span class="gl-pill">✦ Featured</span>
+          </div>
+          <a class="gl-featured-card" href="growth-logs/how-i-use-ai-to-10x-my-seo-workflow.html" data-category="ai-workflows">
+            <div class="gl-featured-card__visual">
+              <div class="gl-thumb gl-thumb--ai">
+                <div class="gl-thumb__grid" aria-hidden="true"></div>
+                <span class="gl-thumb__emoji">🤖</span>
+              </div>
+              <div class="gl-featured-card__meta-mobile">
+                <span class="gl-tag gl-tag--ai">AI Workflows</span>
+                <time class="gl-date">May 5, 2025</time>
+              </div>
+            </div>
+            <div class="gl-featured-card__body">
+              <span class="gl-tag gl-tag--ai gl-tag--desktop">AI Workflows</span>
+              <h2 class="gl-featured-card__title">How I Use AI to 10× My SEO Workflow (Without Losing My Voice)</h2>
+              <p class="gl-featured-card__excerpt">Most marketers use AI wrong — they let it do the thinking. Here's the exact system I use to stay in control while shipping 3× more content, better keyword targeting, and smarter competitor analysis.</p>
+              <div class="gl-featured-card__foot">
+                <time class="gl-date gl-date--desktop">May 5, 2025</time>
+                <span class="gl-dot">·</span>
+                <span class="gl-reading-time">8 min read</span>
+                <span class="gl-arrow-link">Read article
+                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ═══ ARTICLES GRID ═══ -->
+      <section class="gl-grid-section">
+        <div class="gl-grid-section__inner">
+          <div class="gl-grid-header">
+            <span class="gl-section-label-text">All Entries</span>
+            <span class="gl-count-badge" id="gl-count">11 articles</span>
+          </div>
+
+          <div class="gl-grid" id="gl-grid">
+
+            <a class="gl-card gl-reveal" href="growth-logs/seo-ranking-case-study.html" data-category="seo-journey" data-title="The 90-Day SEO Experiment That Changed How I Think About Rankings">
+              <div class="gl-thumb gl-thumb--seo"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">📈</span></div>
+              <div class="gl-card__body">
+                <span class="gl-tag gl-tag--seo">SEO Journey</span>
+                <h3 class="gl-card__title">The 90-Day SEO Experiment That Changed How I Think About Rankings</h3>
+                <p class="gl-card__desc">I tracked every variable across 3 client sites for 90 days. What actually moved the needle surprised me.</p>
+                <div class="gl-card__foot"><time class="gl-date">Apr 28, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">6 min read</span></div>
+              </div>
+            </a>
+
+            <a class="gl-card gl-reveal" href="growth-logs/building-this-portfolio.html" data-category="build-logs" data-title="Building My Portfolio in Public: What I Learned Shipping Fast">
+              <div class="gl-thumb gl-thumb--build"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">⚙️</span></div>
+              <div class="gl-card__body">
+                <span class="gl-tag gl-tag--build">Build Logs</span>
+                <h3 class="gl-card__title">Building My Portfolio in Public: What I Learned Shipping Fast</h3>
+                <p class="gl-card__desc">No frameworks, no templates. Just HTML, CSS, and a drive to ship something real from scratch.</p>
+                <div class="gl-card__foot"><time class="gl-date">Apr 18, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">5 min read</span></div>
+              </div>
+            </a>
+
+            <a class="gl-card gl-reveal" href="growth-logs/linkedin-content-system.html" data-category="linkedin-branding" data-title="My LinkedIn Content System: 0 to Consistent in 60 Days">
+              <div class="gl-thumb gl-thumb--linkedin"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">💼</span></div>
+              <div class="gl-card__body">
+                <span class="gl-tag gl-tag--linkedin">LinkedIn &amp; Branding</span>
+                <h3 class="gl-card__title">My LinkedIn Content System: 0 to Consistent in 60 Days</h3>
+                <p class="gl-card__desc">The exact 3-step process I use to write, schedule, and repurpose LinkedIn content without burning out.</p>
+                <div class="gl-card__foot"><time class="gl-date">Apr 10, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">7 min read</span></div>
+              </div>
+            </a>
+
+            <a class="gl-card gl-reveal" href="growth-logs/meta-ads-learnings.html" data-category="ai-workflows" data-title="What 6 Months of Meta Ads Taught Me About Attention">
+              <div class="gl-thumb gl-thumb--ai"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">🎯</span></div>
+              <div class="gl-card__body">
+                <span class="gl-tag gl-tag--ai">AI Workflows</span>
+                <h3 class="gl-card__title">What 6 Months of Meta Ads Taught Me About Attention</h3>
+                <p class="gl-card__desc">Budget isn't the issue. Creative is. Here's how I changed my entire ad framework after losing $800.</p>
+                <div class="gl-card__foot"><time class="gl-date">Mar 29, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">9 min read</span></div>
+              </div>
+            </a>
+
+            <a class="gl-card gl-reveal" href="growth-logs/freelancing-to-agency.html" data-category="career-notes" data-title="From Freelancer to Agency: The Mindset Shift Nobody Talks About">
+              <div class="gl-thumb gl-thumb--career"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">🚀</span></div>
+              <div class="gl-card__body">
+                <span class="gl-tag gl-tag--career">Career Notes</span>
+                <h3 class="gl-card__title">From Freelancer to Agency: The Mindset Shift Nobody Talks About</h3>
+                <p class="gl-card__desc">The systems, habits, and hard lessons from my first year working across multiple agency accounts.</p>
+                <div class="gl-card__foot"><time class="gl-date">Mar 15, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">6 min read</span></div>
+              </div>
+            </a>
+
+            <a class="gl-card gl-reveal" href="growth-logs/keyword-research-process.html" data-category="seo-journey" data-title="My Keyword Research Process: Fast, Deep and Repeatable">
+              <div class="gl-thumb gl-thumb--seo"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">🔍</span></div>
+              <div class="gl-card__body">
+                <span class="gl-tag gl-tag--seo">SEO Journey</span>
+                <h3 class="gl-card__title">My Keyword Research Process: Fast, Deep &amp; Repeatable</h3>
+                <p class="gl-card__desc">The exact 4-step framework I use for every client — from intent mapping to content prioritization.</p>
+                <div class="gl-card__foot"><time class="gl-date">Mar 5, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">5 min read</span></div>
+              </div>
+            </a>
+
+            <a class="gl-card gl-reveal" href="growth-logs/notion-system-for-marketers.html" data-category="build-logs" data-title="The Notion System That Runs My Entire Marketing Operation">
+              <div class="gl-thumb gl-thumb--build"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">📋</span></div>
+              <div class="gl-card__body">
+                <span class="gl-tag gl-tag--build">Build Logs</span>
+                <h3 class="gl-card__title">The Notion System That Runs My Entire Marketing Operation</h3>
+                <p class="gl-card__desc">One workspace, zero chaos. How I manage clients, content, campaigns, and learning in Notion.</p>
+                <div class="gl-card__foot"><time class="gl-date">Feb 22, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">7 min read</span></div>
+              </div>
+            </a>
+
+            <a class="gl-card gl-reveal" href="growth-logs/personal-brand-in-india.html" data-category="linkedin-branding" data-title="Why Most Indian Marketers Ignore Personal Branding">
+              <div class="gl-thumb gl-thumb--linkedin"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">✨</span></div>
+              <div class="gl-card__body">
+                <span class="gl-tag gl-tag--linkedin">LinkedIn &amp; Branding</span>
+                <h3 class="gl-card__title">Why Most Indian Marketers Ignore Personal Branding (And How I'm Fixing Mine)</h3>
+                <p class="gl-card__desc">A raw, honest look at what it takes to build a recognisable voice in a noisy market.</p>
+                <div class="gl-card__foot"><time class="gl-date">Feb 12, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">5 min read</span></div>
+              </div>
+            </a>
+
+            <a class="gl-card gl-reveal" href="growth-logs/ai-tools-for-marketers-2025.html" data-category="ai-workflows" data-title="10 AI Tools That Actually Save Me Time as a Digital Marketer">
+              <div class="gl-thumb gl-thumb--ai"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">⚡</span></div>
+              <div class="gl-card__body">
+                <span class="gl-tag gl-tag--ai">AI Workflows</span>
+                <h3 class="gl-card__title">10 AI Tools That Actually Save Me Time as a Digital Marketer</h3>
+                <p class="gl-card__desc">No hype, no fluff — just the tools I actually open every day and exactly how I use each one.</p>
+                <div class="gl-card__foot"><time class="gl-date">Jan 30, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">8 min read</span></div>
+              </div>
+            </a>
+
+            <a class="gl-card gl-reveal" href="growth-logs/moving-abroad-as-marketer.html" data-category="career-notes" data-title="Planning to Work Abroad: My Research on Germany Australia and UAE">
+              <div class="gl-thumb gl-thumb--career"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">🌍</span></div>
+              <div class="gl-card__body">
+                <span class="gl-tag gl-tag--career">Career Notes</span>
+                <h3 class="gl-card__title">Planning to Work Abroad: My Research on Germany, Australia &amp; UAE</h3>
+                <p class="gl-card__desc">What I found after 3 months of researching visa pathways, salaries, and job markets for Indian marketers.</p>
+                <div class="gl-card__foot"><time class="gl-date">Jan 18, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">10 min read</span></div>
+              </div>
+            </a>
+
+            <a class="gl-card gl-reveal" href="growth-logs/google-ads-audit-checklist.html" data-category="seo-journey" data-title="The Google Ads Audit Checklist I Use Before Every Campaign">
+              <div class="gl-thumb gl-thumb--seo"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">✅</span></div>
+              <div class="gl-card__body">
+                <span class="gl-tag gl-tag--seo">SEO Journey</span>
+                <h3 class="gl-card__title">The Google Ads Audit Checklist I Use Before Every Campaign</h3>
+                <p class="gl-card__desc">12 checkpoints that prevent wasted budget and set every campaign up for a clean, measurable start.</p>
+                <div class="gl-card__foot"><time class="gl-date">Jan 8, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">6 min read</span></div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="gl-empty" id="gl-empty" hidden>
+            <span>🔍</span>
+            <p>No articles match. Try a different search or filter.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ NEWSLETTER ═══ -->
+      <section class="gl-newsletter gl-reveal">
+        <div class="gl-newsletter__inner">
+          <span class="gl-kicker">Stay in the loop</span>
+          <h2 class="gl-newsletter__title">Get new logs in your inbox.</h2>
+          <p class="gl-newsletter__desc">No spam, no fluff — just one email when a new article drops. Usually once a week.</p>
+          <form class="gl-newsletter__form" id="gl-form">
+            <input class="gl-newsletter__input" type="email" placeholder="your@email.com" required aria-label="Email address" />
+            <button class="button primary" type="submit">Subscribe free</button>
+          </form>
+          <p class="gl-newsletter__note" id="gl-form-note">Join 200+ readers · Unsubscribe anytime</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2025 Suraj Kumar Chandravanshi &nbsp;·&nbsp; <a href="/growth-logs">Growth Logs</a></p>
+        <div class="footer-socials" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/surajkofficial/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.instagram.com/surajchandravanshi1008/" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="mailto:surajkrchandravanshi@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="growth-logs.js"></script>
+  </body>
+</html>
