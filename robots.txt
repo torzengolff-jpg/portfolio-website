@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://my-portfolio-rose-gamma-56.vercel.app/sitemap.xml
+Sitemap: https://surajkchandravanshi.vercel.app/sitemap.xml
