@@ -1339,3 +1339,51 @@ h3 {
   color: var(--muted);
 }
 
+
+/* ── HERO SECONDARY LINE ────────────────────────────────────── */
+.hero-secondary {
+  font-size: 0.92rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: -8px;
+  margin-bottom: 20px;
+}
+
+/* ── LINKEDIN CTA SECTION ───────────────────────────────────── */
+.linkedin-cta-section {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  margin: 0 clamp(18px, 4vw, 58px);
+}
+
+.linkedin-cta-inner {
+  max-width: 560px;
+  padding: clamp(40px, 6vw, 64px) clamp(28px, 5vw, 56px);
+}
+
+.linkedin-cta-inner h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin: 8px 0 14px;
+}
+
+.linkedin-cta-inner p {
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+/* ── ABOUT LINKEDIN LINK ────────────────────────────────────── */
+.linkedin-rec-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--teal);
+  text-decoration: none;
+  transition: gap 180ms ease;
+}
+.linkedin-rec-link:hover { gap: 10px; }

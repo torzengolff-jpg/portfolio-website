@@ -1,4 +1,26 @@
+# robots.txt — Suraj Kumar Chandravanshi Portfolio
+# https://surajkchandravanshi.vercel.app/
+
 User-agent: *
+Allow: /
+
+# Allow all AI bots explicitly
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
 Allow: /
 
 Sitemap: https://surajkchandravanshi.vercel.app/sitemap.xml
