@@ -5,7 +5,7 @@ Suraj Kumar Chandravanshi I help brands improve search visibility, run smarter p
 
 ## 🚀 Live Demo
 
-https://my-portfolio-rose-gamma-50.vercel.app/
+https://surajkchandravanshi.vercel.app/
 
 ## 📌 Overview
 
