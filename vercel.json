@@ -5,7 +5,7 @@
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
     { "src": "/growth-logs/(.+)\\.html", "dest": "/growth-logs/$1.html" },
     { "src": "/growth-logs/(.+)", "dest": "/growth-logs/$1.html" },
-    { "src": "/growth-logs", "dest": "/growth-logs.html" },
+    { "src": "/growth-logs/?", "dest": "/growth-logs.html" },
     { "src": "/(.*\\.(css|js|svg|png|jpg|jpeg|ico|pdf|webp|woff|woff2|ttf))", "dest": "/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]

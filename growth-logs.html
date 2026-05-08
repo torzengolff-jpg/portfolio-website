@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Growth Logs — Suraj Kumar Chandravanshi</title>
-    <meta name="description" content="Notes, systems, experiments, and lessons from my journey in AI, SEO, digital marketing, and building publicly." />
+    <meta name="description" content="Notes, experiments, and lessons from my journey in AI, SEO and digital marketing. Updated weekly." />
+    <link rel="canonical" href="https://surajkchandravanshi.vercel.app/growth-logs" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://my-portfolio-rose-gamma-56.vercel.app/growth-logs" />
+    <meta property="og:url" content="https://surajkchandravanshi.vercel.app/growth-logs" />
     <meta property="og:title" content="Growth Logs — Suraj Kumar Chandravanshi" />
-    <meta property="og:description" content="Notes, systems, experiments, and lessons from my journey in AI, SEO, digital marketing, and building publicly." />
-    <meta property="og:image" content="https://my-portfolio-rose-gamma-56.vercel.app/assets/suraj-profile.png" />
+    <meta property="og:description" content="Notes, experiments, and lessons from my journey in AI, SEO and digital marketing. Updated weekly." />
+    <meta property="og:image" content="https://surajkchandravanshi.vercel.app/assets/suraj-profile.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="growth-logs.css" />
   </head>
@@ -43,30 +45,65 @@
 
       <!-- ═══ HERO ═══ -->
       <section class="gl-hero">
+        <!-- Animated growth SVG background -->
+        <div class="gl-hero__svg-bg" aria-hidden="true">
+          <svg class="gl-anim-svg" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="gl-grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(15,118,110,0.07)" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#gl-grid)" />
+            <!-- Growth chart line -->
+            <polyline class="gl-chart-line" points="40,480 160,420 280,390 360,320 460,280 560,200 640,230 720,160 820,120 920,80 1040,60 1160,30" fill="none" stroke="rgba(15,118,110,0.22)" stroke-width="2.5" stroke-dasharray="1500" stroke-dashoffset="1500"/>
+            <polygon class="gl-chart-area" points="40,480 160,420 280,390 360,320 460,280 560,200 640,230 720,160 820,120 920,80 1040,60 1160,30 1160,560 40,560" fill="rgba(15,118,110,0.04)"/>
+            <!-- Data points -->
+            <circle class="gl-dot-pop" cx="160" cy="420" r="4" fill="rgba(15,118,110,0.3)" style="animation-delay:0.4s"/>
+            <circle class="gl-dot-pop" cx="360" cy="320" r="4" fill="rgba(15,118,110,0.3)" style="animation-delay:0.7s"/>
+            <circle class="gl-dot-pop" cx="560" cy="200" r="5" fill="rgba(15,118,110,0.4)" style="animation-delay:1s"/>
+            <circle class="gl-dot-pop" cx="720" cy="160" r="4" fill="rgba(15,118,110,0.3)" style="animation-delay:1.3s"/>
+            <circle class="gl-dot-pop" cx="920" cy="80"  r="5" fill="rgba(15,118,110,0.4)" style="animation-delay:1.6s"/>
+            <circle class="gl-dot-pop" cx="1160" cy="30" r="6" fill="rgba(15,118,110,0.5)" style="animation-delay:1.9s"/>
+            <!-- Upward arrows -->
+            <g class="gl-arrow-float" style="animation-delay:0s"><path d="M 880 440 L 880 400 M 872 408 L 880 400 L 888 408" stroke="rgba(15,118,110,0.2)" stroke-width="1.5" fill="none" stroke-linecap="round"/></g>
+            <g class="gl-arrow-float" style="animation-delay:1s"><path d="M 1020 380 L 1020 340 M 1012 348 L 1020 340 L 1028 348" stroke="rgba(15,118,110,0.15)" stroke-width="1.5" fill="none" stroke-linecap="round"/></g>
+            <g class="gl-arrow-float" style="animation-delay:0.5s"><path d="M 950 470 L 950 430 M 942 438 L 950 430 L 958 438" stroke="rgba(15,118,110,0.12)" stroke-width="1.5" fill="none" stroke-linecap="round"/></g>
+            <!-- Network nodes (top left) -->
+            <line x1="100" y1="180" x2="200" y2="120" stroke="rgba(15,118,110,0.08)" stroke-width="1"/>
+            <line x1="150" y1="150" x2="100" y2="180" stroke="rgba(15,118,110,0.08)" stroke-width="1"/>
+            <line x1="150" y1="150" x2="200" y2="120" stroke="rgba(15,118,110,0.08)" stroke-width="1"/>
+            <circle class="gl-node" cx="100" cy="180" r="3.5" fill="rgba(15,118,110,0.2)" style="animation-delay:0s"/>
+            <circle class="gl-node" cx="200" cy="120" r="2.5" fill="rgba(15,118,110,0.15)" style="animation-delay:0.8s"/>
+            <circle class="gl-node" cx="150" cy="150" r="2"   fill="rgba(15,118,110,0.12)" style="animation-delay:0.4s"/>
+            <!-- Bar chart (right) -->
+            <rect class="gl-bar" x="1060" y="380" width="14" height="0" rx="2" fill="rgba(15,118,110,0.2)" style="animation-delay:2.1s" data-top="320" data-h="60"/>
+            <rect class="gl-bar" x="1078" y="380" width="14" height="0" rx="2" fill="rgba(15,118,110,0.25)" style="animation-delay:2.3s" data-top="300" data-h="80"/>
+            <rect class="gl-bar" x="1096" y="380" width="14" height="0" rx="2" fill="rgba(15,118,110,0.3)" style="animation-delay:2.5s" data-top="280" data-h="100"/>
+            <rect class="gl-bar" x="1114" y="380" width="14" height="0" rx="2" fill="rgba(15,118,110,0.38)" style="animation-delay:2.7s" data-top="260" data-h="120"/>
+            <!-- Pulse rings on peak -->
+            <circle class="gl-pulse-ring" cx="560" cy="200" r="8" fill="none" stroke="rgba(15,118,110,0.25)" stroke-width="1.5" style="animation-delay:2.2s"/>
+            <circle class="gl-pulse-ring" cx="560" cy="200" r="8" fill="none" stroke="rgba(15,118,110,0.12)" stroke-width="1" style="animation-delay:2.8s"/>
+            <!-- Labels -->
+            <text class="gl-label-fade" x="556" y="188" text-anchor="middle" font-size="8" fill="rgba(15,118,110,0.35)" font-family="Inter,sans-serif" font-weight="700" letter-spacing="0.5">PEAK</text>
+            <text class="gl-label-fade" x="1140" y="22" text-anchor="middle" font-size="8" fill="rgba(15,118,110,0.35)" font-family="Inter,sans-serif" font-weight="700" letter-spacing="0.5" style="animation-delay:0.5s">↑ GROWING</text>
+          </svg>
+        </div>
+
         <div class="gl-hero__orb gl-hero__orb--1" aria-hidden="true"></div>
         <div class="gl-hero__orb gl-hero__orb--2" aria-hidden="true"></div>
         <div class="gl-hero__content gl-reveal">
           <div class="gl-hero__badge">
             <span class="gl-hero__badge-dot"></span>
-            Journal · Est. 2026 
+            Journal · Est. 2024
           </div>
           <h1 class="gl-hero__title">Growth<br/>Logs</h1>
           <p class="gl-hero__subtitle">Notes, systems, experiments, and lessons from my journey in AI, SEO, digital marketing, and building publicly.</p>
           <div class="gl-hero__stats">
-            <div class="gl-hero__stat">
-              <strong>12</strong>
-              <span>Entries</span>
-            </div>
+            <div class="gl-hero__stat"><strong>12</strong><span>Entries</span></div>
             <div class="gl-hero__stat-divider"></div>
-            <div class="gl-hero__stat">
-              <strong>Weekly</strong>
-              <span>Updates</span>
-            </div>
+            <div class="gl-hero__stat"><strong>Weekly</strong><span>Updates</span></div>
             <div class="gl-hero__stat-divider"></div>
-            <div class="gl-hero__stat">
-              <strong>Free</strong>
-              <span>Always</span>
-            </div>
+            <div class="gl-hero__stat"><strong>Free</strong><span>Always</span></div>
           </div>
         </div>
       </section>
@@ -289,7 +326,7 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="growth-logs.js"></script>
+    <script src="script.js" defer></script>
+    <script src="growth-logs.js" defer></script>
   </body>
 </html>

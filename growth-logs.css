@@ -869,3 +869,198 @@
   .gl-newsletter__input { width: 100%; }
   .gl-hero__stats { gap: 14px; }
 }
+
+/* ================================================================
+   ANIMATED SVG HERO BACKGROUND
+   ================================================================ */
+.gl-hero__svg-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.gl-anim-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Chart line draws itself */
+@keyframes gl-draw-line {
+  to { stroke-dashoffset: 0; }
+}
+.gl-chart-line {
+  animation: gl-draw-line 2.8s cubic-bezier(0.4,0,0.2,1) 0.3s forwards;
+}
+
+/* Chart area fades in */
+@keyframes gl-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.gl-chart-area {
+  opacity: 0;
+  animation: gl-fade-in 1.2s ease 2.5s forwards;
+}
+
+/* Dots pop in */
+@keyframes gl-dot-appear {
+  from { r: 0; opacity: 0; }
+  to   { opacity: 1; }
+}
+.gl-dot-pop {
+  opacity: 0;
+  animation: gl-fade-in 0.4s ease forwards;
+}
+
+/* Arrows float upward continuously */
+@keyframes gl-float-up {
+  0%   { transform: translateY(0);   opacity: 0.6; }
+  60%  { opacity: 0.8; }
+  100% { transform: translateY(-30px); opacity: 0; }
+}
+.gl-arrow-float {
+  animation: gl-float-up 3s ease-in-out infinite;
+}
+
+/* Network nodes pulse */
+@keyframes gl-node-pulse {
+  0%, 100% { r: 3; opacity: 0.3; }
+  50%       { r: 5; opacity: 0.6; }
+}
+.gl-node {
+  animation: gl-node-pulse 2.5s ease-in-out infinite;
+}
+
+/* Bar chart grows up */
+@keyframes gl-bar-grow {
+  from { height: 0; }
+}
+.gl-bar {
+  transform-origin: bottom;
+  animation: gl-bar-grow 0.7s cubic-bezier(0.22,1,0.36,1) forwards;
+}
+/* JS sets the height — CSS just controls the animation */
+.gl-bar:nth-child(1) { height: 60px; }
+.gl-bar:nth-child(2) { height: 80px; }
+.gl-bar:nth-child(3) { height: 100px; }
+.gl-bar:nth-child(4) { height: 120px; }
+
+/* Pulse rings expand and fade */
+@keyframes gl-ring-pulse {
+  from { r: 8; opacity: 0.7; }
+  to   { r: 30; opacity: 0; }
+}
+.gl-pulse-ring {
+  animation: gl-ring-pulse 2.5s ease-out infinite;
+}
+
+/* Text labels fade in */
+.gl-label-fade {
+  opacity: 0;
+  animation: gl-fade-in 0.6s ease forwards;
+}
+
+/* ================================================================
+   MOBILE IMPROVEMENTS — full phone friendliness
+   ================================================================ */
+@media (max-width: 768px) {
+  /* Hero */
+  .gl-hero {
+    min-height: auto;
+    padding: 80px 20px 60px;
+  }
+  .gl-hero__title {
+    font-size: clamp(3.2rem, 16vw, 5.5rem);
+  }
+  .gl-hero__subtitle {
+    font-size: 1rem;
+  }
+  .gl-hero__stats {
+    gap: 12px;
+  }
+  .gl-hero__stat strong { font-size: 1.1rem; }
+  .gl-hero__badge { font-size: 0.72rem; }
+
+  /* Controls: stack search + filters */
+  .gl-controls {
+    top: 60px;
+    padding: 0 16px;
+  }
+  .gl-controls__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 0;
+  }
+  .gl-search-wrap { width: 100%; }
+  .gl-search { width: 100%; }
+  .gl-search:focus { width: 100%; }
+  .gl-filters {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .gl-filters::-webkit-scrollbar { display: none; }
+  .gl-filter { flex-shrink: 0; }
+
+  /* Featured card */
+  .gl-featured-section {
+    padding: 32px 16px;
+  }
+  .gl-featured-card {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
+  .gl-featured-card .gl-thumb { height: 200px; }
+  .gl-featured-card__title { font-size: 1.3rem; }
+  .gl-featured-card__excerpt { font-size: 0.9rem; }
+
+  /* Grid */
+  .gl-grid-section { padding: 32px 16px; }
+  .gl-grid { grid-template-columns: 1fr; gap: 16px; }
+  .gl-card .gl-thumb { height: 160px; }
+
+  /* Newsletter */
+  .gl-newsletter {
+    margin: 0 12px 48px;
+    padding: 36px 20px;
+    border-radius: 16px;
+  }
+  .gl-newsletter__title { font-size: 1.5rem; }
+  .gl-newsletter__form { flex-direction: column; }
+  .gl-newsletter__input { width: 100%; flex: none; }
+
+  /* Post page */
+  .gl-post-hero { padding: 60px 16px 32px; }
+  .gl-post-hero__title { font-size: clamp(1.6rem, 7vw, 2.4rem); }
+  .gl-post-thumb { padding: 0 16px; }
+  .gl-post-thumb .gl-thumb { height: 200px; }
+  .gl-post-content { padding: 28px 16px; }
+  .gl-post-content__inner { font-size: 1rem; }
+  .gl-related { padding: 32px 16px; }
+  .gl-related__grid { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  /* Tap targets — bigger on mobile */
+  .gl-filter { min-height: 38px; padding: 0 16px; }
+  .gl-card { cursor: pointer; }
+  .gl-card:active { transform: scale(0.98); }
+}
+
+@media (max-width: 400px) {
+  .gl-hero__title { font-size: 3rem; }
+  .gl-hero__stat-divider { display: none; }
+  .gl-hero__stats { gap: 20px; }
+}
