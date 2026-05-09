@@ -1,30 +1,42 @@
 :root {
-  --ink: #17191f;
-  --muted: #626a76;
-  --line: #dfe4e9;
-  --paper: #f7f4ee;
-  --sand: #f3dfc4;
-  --sand-soft: #fbefe1;
-  --mist: #e8f0ec;
-  --white: #ffffff;
-  --teal: #0f766e;
-  --blue: #315a8c;
-  --coral: #d95d48;
-  --green: #4d7c48;
-  --shadow: 0 24px 70px rgba(23, 25, 31, 0.12);
-  --shadow-strong: 0 34px 90px rgba(23, 25, 31, 0.18);
-  --radius: 8px;
+  /* ── NEW PREMIUM 2025 PALETTE ─────────────────────────────── */
+  --ink:        #0b0d14;          /* Deep rich black */
+  --muted:      #5a6270;          /* Neutral cool gray */
+  --line:       #e4e8ef;          /* Crisp border */
+  --paper:      #f7f8fc;          /* Cool off-white */
+  --white:      #ffffff;
+
+  /* Accent surfaces */
+  --sand:       #eef2ff;          /* Indigo tint (replaces warm sand) */
+  --sand-soft:  #f5f7ff;          /* Lighter indigo surface */
+  --mist:       #ecfdf5;          /* Fresh mint tint */
+
+  /* Primary accent — Electric Indigo-Teal */
+  --teal:       #0d9488;          /* Upgraded teal — richer, more vibrant */
+  --teal-mid:   #14b8a6;          /* Lighter teal for gradients */
+  --teal-glow:  rgba(13,148,136,0.18);
+
+  /* Supporting accents */
+  --blue:       #3b5bdb;          /* Premium indigo-blue */
+  --coral:      #f43f5e;          /* Vibrant rose-red */
+  --green:      #10b981;          /* Fresh emerald */
+  --violet:     #7c3aed;          /* Deep violet for gradients */
+
+  /* Shadows */
+  --shadow:       0 20px 60px rgba(11,13,20,0.10);
+  --shadow-strong:0 32px 80px rgba(11,13,20,0.18);
+  --shadow-teal:  0 16px 40px rgba(13,148,136,0.20);
+  --radius: 10px;
 }
 
 /* Scroll progress bar */
 .scroll-progress {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   z-index: 100;
   height: 3px;
   width: 0%;
-  background: linear-gradient(90deg, var(--teal), #22d3c8);
+  background: linear-gradient(90deg, var(--teal), var(--teal-mid), var(--violet));
   border-radius: 0 2px 2px 0;
   transition: width 80ms linear;
   pointer-events: none;
@@ -42,7 +54,8 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    linear-gradient(180deg, rgba(243, 223, 196, 0.38), rgba(247, 244, 238, 0) 620px),
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(13,148,136,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(124,58,237,0.04) 0%, transparent 50%),
     var(--paper);
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.6;
@@ -67,9 +80,10 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 16px clamp(18px, 4vw, 58px);
-  border-bottom: 1px solid rgba(23, 25, 31, 0.08);
-  background: rgba(247, 244, 238, 0.9);
-  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(11,13,20,0.07);
+  background: rgba(247,248,252,0.88);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
 }
 
 .brand,
@@ -259,8 +273,8 @@ h3 {
 
 .button.primary {
   color: var(--white);
-  background: var(--teal);
-  box-shadow: 0 16px 34px rgba(15, 118, 110, 0.22);
+  background: linear-gradient(135deg, var(--teal), #0a7a73);
+  box-shadow: var(--shadow-teal);
 }
 
 .button.dark {
@@ -330,9 +344,9 @@ h3 {
   position: absolute;
   inset: 18px -18px -18px 18px;
   z-index: -1;
-  border: 1px solid rgba(15, 118, 110, 0.22);
+  border: 1px solid rgba(13,148,136,0.2);
   border-radius: var(--radius);
-  background: rgba(243, 223, 196, 0.34);
+  background: linear-gradient(135deg, rgba(13,148,136,0.08), rgba(124,58,237,0.06));
   content: "";
 }
 
@@ -400,7 +414,7 @@ h3 {
 .metrics strong {
   display: block;
   margin-bottom: 12px;
-  color: var(--blue);
+  color: var(--teal);
   font-size: clamp(1.45rem, 3vw, 2.45rem);
   line-height: 1;
 }
@@ -501,10 +515,10 @@ h3 {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  color: var(--coral);
-  background: rgba(217, 93, 72, 0.1);
-  border: 1.5px solid rgba(217, 93, 72, 0.2);
-  font-family: "Poppins", Arial, sans-serif;
+  color: var(--teal);
+  background: rgba(13,148,136,0.1);
+  border: 1.5px solid rgba(13,148,136,0.22);
+  font-family: "Space Grotesk", Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 800;
 }
@@ -526,7 +540,7 @@ h3 {
   gap: 12px;
   margin: 14px 0 16px;
   padding: 12px 14px;
-  background: rgba(15, 118, 110, 0.06);
+  background: rgba(13,148,136,0.06);
   border-left: 3px solid var(--teal);
   border-radius: 0 var(--radius) var(--radius) 0;
 }
@@ -544,8 +558,8 @@ h3 {
   line-height: 1.4;
 }
 
-.work-card--paid .work-stat { border-left-color: var(--coral); background: rgba(217, 93, 72, 0.06); }
-.work-card--social .work-stat { border-left-color: var(--green); background: rgba(77, 124, 72, 0.06); }
+.work-card--paid .work-stat { border-left-color: var(--coral); background: rgba(244,63,94,0.06); }
+.work-card--social .work-stat { border-left-color: var(--green); background: rgba(16,185,129,0.06); }
 
 .tag {
   display: inline-flex;
@@ -709,10 +723,10 @@ h3 {
   gap: clamp(28px, 6vw, 84px);
   padding: clamp(64px, 9vw, 122px) clamp(18px, 4vw, 58px);
   color: var(--white);
-  background: 
-    radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px),
-    linear-gradient(135deg, rgba(15, 118, 110, 0.98), rgba(15, 118, 110, 0.9)), var(--teal);
-  background-size: 28px 28px, 100% 100%, 100% 100%;
+  background:
+    radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(135deg, #06090f 0%, #0d1a2e 50%, #0b1a1f 100%);
+  background-size: 28px 28px, 100% 100%;
 }
 
 /* Studying badge */
@@ -825,8 +839,8 @@ h3 {
 
 .footer-socials a:hover,
 .footer-socials a:focus-visible {
-  border-color: rgba(15, 118, 110, 0.4);
-  background: #e8f0ec;
+  border-color: rgba(13,148,136,0.4);
+  background: var(--mist);
   transform: translateY(-2px);
 }
 
@@ -1387,3 +1401,193 @@ h3 {
   transition: gap 180ms ease;
 }
 .linkedin-rec-link:hover { gap: 10px; }
+
+/* ================================================================
+   PREMIUM 2025 ADDITIONS
+   ================================================================ */
+
+/* Gradient text on h1 */
+h1 {
+  background: linear-gradient(135deg, var(--ink) 0%, #1a2a3a 60%, var(--teal) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero floating particles */
+@keyframes particle-float {
+  0%   { transform: translateY(0) translateX(0) scale(1); opacity: 0.5; }
+  33%  { transform: translateY(-28px) translateX(12px) scale(1.1); opacity: 0.8; }
+  66%  { transform: translateY(-14px) translateX(-8px) scale(0.9); opacity: 0.6; }
+  100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.5; }
+}
+
+.hero-particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: particle-float linear infinite;
+}
+
+/* Shimmer on brand mark */
+@keyframes brand-shimmer {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(13,148,136,0); }
+  50% { box-shadow: 0 0 0 6px rgba(13,148,136,0.12); }
+}
+.brand-mark {
+  animation: brand-shimmer 3s ease-in-out infinite;
+}
+
+/* Section kicker — gradient underline */
+.section-kicker::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  margin-top: 4px;
+  background: linear-gradient(90deg, var(--teal), var(--violet));
+  border-radius: 2px;
+}
+
+/* Work card — premium hover glow */
+.work-card {
+  transition: transform 250ms cubic-bezier(0.22,1,0.36,1),
+              box-shadow 250ms cubic-bezier(0.22,1,0.36,1),
+              border-color 250ms ease;
+}
+.work-card:hover {
+  box-shadow: 0 24px 60px rgba(11,13,20,0.13), 0 0 0 1px rgba(13,148,136,0.2);
+}
+
+/* Service items — hover accent line */
+.service-item {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.service-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(11,13,20,0.09);
+}
+
+/* Skill bar gradient */
+.skill-bar-fill {
+  background: linear-gradient(90deg, var(--teal), var(--teal-mid));
+}
+
+/* Studying badge new color */
+.studying-badge {
+  background: rgba(13,148,136,0.1);
+  color: var(--teal);
+}
+.studying-badge::before {
+  background: var(--teal);
+}
+
+/* Contact section kicker/p override */
+.contact-section .section-kicker {
+  color: rgba(255,255,255,0.55);
+}
+.contact-section .section-kicker::after {
+  background: linear-gradient(90deg, rgba(255,255,255,0.5), transparent);
+}
+.contact-section p { color: rgba(255,255,255,0.7); }
+.contact-section h2 {
+  background: linear-gradient(135deg, #ffffff, rgba(255,255,255,0.85));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Tool icon hover */
+.tool-card:hover {
+  border-color: rgba(13,148,136,0.3);
+  box-shadow: 0 12px 30px rgba(13,148,136,0.1);
+}
+
+/* Nav active state — new teal */
+.site-nav a.nav-active { color: var(--teal); }
+.site-nav a.nav-active::after { background: var(--teal); }
+
+/* Skills section kicker white on dark */
+.skills-section .section-kicker { color: var(--white); }
+
+/* Hero proof left border new teal */
+.hero-proof span { border-left-color: var(--teal); }
+.proof-icon { color: var(--teal); }
+
+/* Testimonial card polish */
+.testimonial-card::before { color: var(--teal); opacity: 0.2; }
+.testimonial-card:hover {
+  border-color: rgba(13,148,136,0.25);
+  box-shadow: 0 18px 48px rgba(11,13,20,0.10);
+}
+
+/* Timeline accent */
+.timeline-item::before { background: var(--teal); }
+
+/* Tools section bg */
+.tools-section { background: var(--sand-soft); border-radius: 20px; }
+
+/* LinkedIn CTA section */
+.linkedin-cta-section { border-color: var(--line); }
+.linkedin-rec-link { color: var(--teal); }
+
+/* Nav active bottom bar */
+.site-nav a.nav-active::after { background: var(--teal); }
+
+/* Pulsing availability dot */
+@keyframes availability-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+}
+
+
+/* ── TESTIMONIALS FOOTER LINK ───────────────────────────────── */
+.testimonials-footer {
+  margin-top: 32px;
+  text-align: center;
+}
+.testimonials-footer .linkedin-rec-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--teal);
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1.5px solid rgba(13,148,136,0.25);
+  border-radius: 999px;
+  transition: background 180ms ease, gap 180ms ease;
+}
+.testimonials-footer .linkedin-rec-link:hover {
+  background: rgba(13,148,136,0.06);
+  gap: 10px;
+}
+
+/* ── HERO PHOTO OBJECT POSITION (suit photo) ────────────────── */
+.hero-visual img {
+  object-position: center top;
+}
+
+/* ── HERO SECTION ANIMATED BACKGROUND ──────────────────────── */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 70% 10%, rgba(13,148,136,0.07) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(124,58,237,0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-copy, .hero-visual { position: relative; z-index: 1; }
+
+/* ── WORK CARD COLOR BORDERS ────────────────────────────────── */
+.work-card--seo  { border-top-color: var(--teal); }
+.work-card--paid { border-top-color: var(--coral); }
+.work-card--social { border-top-color: var(--green); }
+

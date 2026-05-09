@@ -1,6 +1,6 @@
 /* ================================================================
    GROWTH LOGS — Premium Blog System
-   Matches existing portfolio: #f7f4ee bg, #0f766e teal, #17191f ink
+   Matches existing portfolio: #f7f4ee bg, var(--teal) teal, #17191f ink
    ================================================================ */
 
 /* ── HERO ─────────────────────────────────────────────────────── */
@@ -12,7 +12,7 @@
   align-items: center;
   padding: clamp(80px, 12vw, 140px) clamp(18px, 4vw, 64px) clamp(64px, 8vw, 100px);
   background:
-    radial-gradient(ellipse 80% 60% at 60% 0%, rgba(15,118,110,0.10) 0%, transparent 65%),
+    radial-gradient(ellipse 80% 60% at 60% 0%, rgba(13,148,136,0.10) 0%, transparent 65%),
     radial-gradient(ellipse 60% 50% at 20% 100%, rgba(243,223,196,0.55) 0%, transparent 60%),
     linear-gradient(180deg, rgba(243,223,196,0.45), rgba(247,244,238,0) 600px),
     var(--paper);
@@ -29,7 +29,7 @@
 .gl-hero__orb--1 {
   width: 500px; height: 500px;
   top: -140px; right: -80px;
-  background: radial-gradient(circle, rgba(15,118,110,0.25), transparent 70%);
+  background: radial-gradient(circle, rgba(13,148,136,0.25), transparent 70%);
   animation: gl-float 9s ease-in-out infinite;
 }
 .gl-hero__orb--2 {
@@ -57,8 +57,8 @@
   margin-bottom: 28px;
   padding: 7px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(15,118,110,0.22);
-  background: rgba(15,118,110,0.07);
+  border: 1px solid rgba(13,148,136,0.22);
+  background: rgba(13,148,136,0.07);
   color: var(--teal);
   font-size: 0.78rem;
   font-weight: 700;
@@ -193,7 +193,7 @@
 
 .gl-search:focus {
   border-color: var(--teal);
-  box-shadow: 0 0 0 3px rgba(15,118,110,0.12);
+  box-shadow: 0 0 0 3px rgba(13,148,136,0.12);
   width: 270px;
 }
 
@@ -230,7 +230,7 @@
 
 .gl-filter.active {
   border-color: var(--teal);
-  background: rgba(15,118,110,0.09);
+  background: rgba(13,148,136,0.09);
   color: var(--teal);
 }
 
@@ -243,8 +243,8 @@
   gap: 6px;
   padding: 5px 14px;
   border-radius: 999px;
-  background: rgba(15,118,110,0.08);
-  border: 1px solid rgba(15,118,110,0.18);
+  background: rgba(13,148,136,0.08);
+  border: 1px solid rgba(13,148,136,0.18);
   color: var(--teal);
   font-size: 0.78rem;
   font-weight: 700;
@@ -282,7 +282,7 @@
 .gl-featured-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-strong);
-  border-color: rgba(15,118,110,0.25);
+  border-color: rgba(13,148,136,0.25);
 }
 
 /* Thumbnails */
@@ -316,19 +316,19 @@
 }
 
 .gl-thumb--ai {
-  background: linear-gradient(135deg, #0f2027, #203a43, #0f766e);
+  background: linear-gradient(135deg, #0f2027, #203a43, var(--teal));
 }
 .gl-thumb--seo {
-  background: linear-gradient(135deg, #134e4a, #0f766e, #1a6c5e);
+  background: linear-gradient(135deg, #134e4a, var(--teal), #1a6c5e);
 }
 .gl-thumb--build {
   background: linear-gradient(135deg, #1e1b4b, #312e81, #4338ca);
 }
 .gl-thumb--linkedin {
-  background: linear-gradient(135deg, #0a192f, #315a8c, #0f766e);
+  background: linear-gradient(135deg, #0a192f, #315a8c, var(--teal));
 }
 .gl-thumb--career {
-  background: linear-gradient(135deg, #1a0a00, #7c2d12, #d95d48);
+  background: linear-gradient(135deg, #1a0a00, #7c2d12, var(--coral));
 }
 
 .gl-featured-card__meta-mobile { display: none; }
@@ -370,11 +370,11 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.gl-tag--ai       { background: rgba(15,118,110,0.1);  color: var(--teal); }
+.gl-tag--ai       { background: rgba(13,148,136,0.1);  color: var(--teal); }
 .gl-tag--seo      { background: rgba(77,124,72,0.1);   color: var(--green); }
 .gl-tag--build    { background: rgba(67,56,202,0.1);   color: #4338ca; }
 .gl-tag--linkedin { background: rgba(49,90,140,0.12);  color: var(--blue); }
-.gl-tag--career   { background: rgba(217,93,72,0.1);   color: var(--coral); }
+.gl-tag--career   { background: rgba(244,63,94,0.1);   color: var(--coral); }
 
 /* ── DATE / READING TIME ──────────────────────────────────────── */
 .gl-date, .gl-reading-time {
@@ -424,7 +424,7 @@
   font-weight: 600;
   padding: 4px 12px;
   border-radius: 999px;
-  background: rgba(15,118,110,0.09);
+  background: rgba(13,148,136,0.09);
   color: var(--teal);
 }
 
@@ -452,7 +452,7 @@
 .gl-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 50px rgba(23,25,31,0.11);
-  border-color: rgba(15,118,110,0.22);
+  border-color: rgba(13,148,136,0.22);
 }
 
 .gl-card .gl-thumb {
@@ -518,8 +518,8 @@
   margin: 0 clamp(18px, 4vw, 64px) 80px;
   border-radius: 20px;
   background:
-    radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(135deg, rgba(15,118,110,0.97), rgba(6,78,74,1));
+    radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(135deg, #06090f 0%, #0d1a2e 50%, #0b1a1f 100%);
   background-size: 26px 26px, 100% 100%;
   padding: clamp(48px, 6vw, 80px) clamp(28px, 5vw, 72px);
   text-align: center;
@@ -588,7 +588,7 @@
 .gl-post-hero {
   padding: clamp(64px, 8vw, 100px) clamp(18px, 4vw, 64px) clamp(40px, 5vw, 64px);
   background:
-    radial-gradient(ellipse 80% 60% at 60% 0%, rgba(15,118,110,0.08) 0%, transparent 65%),
+    radial-gradient(ellipse 80% 60% at 60% 0%, rgba(13,148,136,0.08) 0%, transparent 65%),
     linear-gradient(180deg, rgba(243,223,196,0.45), rgba(247,244,238,0) 500px),
     var(--paper);
   border-bottom: 1px solid var(--line);
@@ -732,7 +732,7 @@
   margin: 2em 0;
   padding: 20px 24px;
   border-left: 4px solid var(--teal);
-  background: rgba(15,118,110,0.05);
+  background: rgba(13,148,136,0.05);
   border-radius: 0 10px 10px 0;
   font-size: 1.08rem;
   font-style: italic;
@@ -746,8 +746,8 @@
   align-items: flex-start;
   padding: 18px 20px;
   border-radius: 12px;
-  background: rgba(15,118,110,0.07);
-  border: 1px solid rgba(15,118,110,0.18);
+  background: rgba(13,148,136,0.07);
+  border: 1px solid rgba(13,148,136,0.18);
   margin: 1.8em 0;
   font-size: 0.95rem;
 }
@@ -1110,12 +1110,12 @@
   font-size: 0.8rem; font-weight: 700;
   padding: 4px 10px;
   border-radius: 5px;
-  background: rgba(15,118,110,0.08);
+  background: rgba(13,148,136,0.08);
   color: var(--teal);
   text-decoration: none;
   transition: background 150ms ease;
 }
-.gl-author-bio__links a:hover { background: rgba(15,118,110,0.15); }
+.gl-author-bio__links a:hover { background: rgba(13,148,136,0.15); }
 
 /* Work With Me CTA */
 .gl-hire-cta {
