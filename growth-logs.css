@@ -1148,4 +1148,13 @@
 @media (max-width: 600px) {
   .gl-hire-cta__inner { flex-direction: column; }
   .gl-author-bio__inner { flex-direction: column; }
+
+   /* ── COMING SOON ──────────────────────────────────────────────── */
+.gl-coming-soon {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  font-style: italic;
 }
