@@ -79,7 +79,7 @@
 }
 
 .gl-hero__title {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 700;
   line-height: 0.92;
@@ -336,7 +336,7 @@
 .gl-tag--desktop { display: inline-flex; }
 
 .gl-featured-card__title {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(1.35rem, 2.5vw, 1.85rem);
   font-weight: 700;
   line-height: 1.2;
@@ -535,10 +535,10 @@
 }
 
 .gl-newsletter__title {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(1.6rem, 4vw, 2.4rem);
-  font-weight: 700;
-  letter-spacing: -0.035em;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   line-height: 1.1;
   color: var(--white);
   margin: 0 0 14px;
@@ -1368,3 +1368,71 @@
   .gl-coming-soon { margin: 0 12px 40px; border-radius: 16px; }
 }
 
+
+/* ================================================================
+   COMING SOON CARDS
+   ================================================================ */
+.gl-card--soon {
+  opacity: 0.72;
+  pointer-events: none;
+  position: relative;
+}
+
+.gl-card--soon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(to bottom, transparent 40%, rgba(247,248,252,0.6));
+  pointer-events: none;
+}
+
+.gl-card__foot--soon {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  margin-top: 6px;
+}
+
+.gl-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(13,148,136,0.08);
+  border: 1px dashed rgba(13,148,136,0.3);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--teal);
+  letter-spacing: 0.02em;
+}
+
+/* ── SEJ EDITORIAL FONT OVERRIDES FOR GL ──────────────────────── */
+.gl-hero__title {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+}
+
+.gl-featured-card__title {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.025em !important;
+}
+
+/* Post page headings also get Playfair */
+.gl-post-hero__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.gl-post-content__inner h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+}
+
+.gl-related__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+}

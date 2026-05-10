@@ -204,30 +204,34 @@ p {
 
 h1,
 h2 {
-  font-family: "Space Grotesk", sans-serif;
-  letter-spacing: -0.04em;
+  font-family: "Playfair Display", Georgia, serif;
+  letter-spacing: -0.02em;
 }
 
 h1 {
   max-width: 720px;
   margin-bottom: 24px;
   font-size: clamp(2.8rem, 6vw, 5.4rem);
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 600;
-  line-height: 0.98;
-  letter-spacing: -0.045em;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
 }
 
 h2 {
   margin-bottom: 18px;
-  font-size: clamp(2rem, 4vw, 4rem);
-  line-height: 1.05;
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.06;
 }
 
 h3 {
   margin-bottom: 10px;
   font-size: 1.13rem;
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 700;
   line-height: 1.35;
+  letter-spacing: -0.02em;
 }
 
 .hero-text {
@@ -1406,9 +1410,9 @@ h3 {
    PREMIUM 2025 ADDITIONS
    ================================================================ */
 
-/* Gradient text on h1 */
+/* Gradient text on h1 - works with Playfair Display */
 h1 {
-  background: linear-gradient(135deg, var(--ink) 0%, #1a2a3a 60%, var(--teal) 100%);
+  background: linear-gradient(135deg, var(--ink) 0%, #1a2a3a 70%, var(--teal) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
