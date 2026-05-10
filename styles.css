@@ -57,7 +57,7 @@ body {
     radial-gradient(ellipse 80% 50% at 50% -10%, rgba(13,148,136,0.06) 0%, transparent 60%),
     radial-gradient(ellipse 60% 40% at 100% 0%, rgba(124,58,237,0.04) 0%, transparent 50%),
     var(--paper);
-  font-family: "Inter", Arial, sans-serif;
+ font-family: "Inter", sans-serif;
   line-height: 1.6;
 }
 
