@@ -79,7 +79,7 @@
 }
 
 .gl-hero__title {
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Merriweather", Georgia, serif;
   font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 700;
   line-height: 0.92;
@@ -336,7 +336,7 @@
 .gl-tag--desktop { display: inline-flex; }
 
 .gl-featured-card__title {
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Merriweather", Georgia, serif;
   font-size: clamp(1.35rem, 2.5vw, 1.85rem);
   font-weight: 700;
   line-height: 1.2;
@@ -535,7 +535,7 @@
 }
 
 .gl-newsletter__title {
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Merriweather", Georgia, serif;
   font-size: clamp(1.6rem, 4vw, 2.4rem);
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -1409,13 +1409,13 @@
 
 /* ── SEJ EDITORIAL FONT OVERRIDES FOR GL ──────────────────────── */
 .gl-hero__title {
-  font-family: "Playfair Display", Georgia, serif !important;
+  font-family: "Merriweather", Georgia, serif !important;
   font-weight: 800 !important;
   letter-spacing: -0.03em !important;
 }
 
 .gl-featured-card__title {
-  font-family: "Playfair Display", Georgia, serif !important;
+  font-family: "Merriweather", Georgia, serif !important;
   font-weight: 800 !important;
   letter-spacing: -0.025em !important;
 }
