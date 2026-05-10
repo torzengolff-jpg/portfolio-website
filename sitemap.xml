@@ -4,92 +4,30 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Homepage -->
   <url>
     <loc>https://surajkchandravanshi.vercel.app/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Growth Logs index -->
   <url>
     <loc>https://surajkchandravanshi.vercel.app/growth-logs</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Growth Logs articles -->
   <url>
     <loc>https://surajkchandravanshi.vercel.app/growth-logs/how-i-use-ai-to-10x-my-seo-workflow</loc>
     <lastmod>2025-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+
   <url>
     <loc>https://surajkchandravanshi.vercel.app/growth-logs/seo-ranking-case-study</loc>
     <lastmod>2025-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://surajkchandravanshi.vercel.app/growth-logs/building-this-portfolio</loc>
-    <lastmod>2025-04-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://surajkchandravanshi.vercel.app/growth-logs/linkedin-content-system</loc>
-    <lastmod>2025-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://surajkchandravanshi.vercel.app/growth-logs/meta-ads-learnings</loc>
-    <lastmod>2025-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://surajkchandravanshi.vercel.app/growth-logs/freelancing-to-agency</loc>
-    <lastmod>2025-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://surajkchandravanshi.vercel.app/growth-logs/keyword-research-process</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://surajkchandravanshi.vercel.app/growth-logs/notion-system-for-marketers</loc>
-    <lastmod>2025-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://surajkchandravanshi.vercel.app/growth-logs/personal-brand-in-india</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://surajkchandravanshi.vercel.app/growth-logs/ai-tools-for-marketers-2025</loc>
-    <lastmod>2025-01-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://surajkchandravanshi.vercel.app/growth-logs/moving-abroad-as-marketer</loc>
-    <lastmod>2025-01-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://surajkchandravanshi.vercel.app/growth-logs/google-ads-audit-checklist</loc>
-    <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

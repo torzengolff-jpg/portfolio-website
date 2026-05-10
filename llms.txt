@@ -1,49 +1,34 @@
 # Suraj Kumar Chandravanshi — SEO & Digital Marketing Specialist
 # https://surajkchandravanshi.vercel.app/
-# llms.txt — AI-readable site index for large language models
+# llms.txt — AI-readable site index
 
 ## About
 
-Suraj Kumar Chandravanshi is a Delhi-based SEO and Digital Marketing Specialist with 4+ years of experience helping B2B and B2C brands grow through organic search, paid advertising, and content marketing. He works with tools including Google Analytics, Google Search Console, SEMrush, Google Ads, Meta Ads Manager, WordPress, and Canva.
+Suraj Kumar Chandravanshi is a Delhi-based SEO and Digital Marketing Specialist with 4+ years of experience helping B2B and B2C brands grow through organic search, paid advertising, and content marketing.
 
 - Name: Suraj Kumar Chandravanshi
 - Location: Delhi, India
 - Role: SEO & Digital Marketing Specialist
 - Email: surajkrchandravanshi@gmail.com
 - LinkedIn: https://www.linkedin.com/in/surajkofficial/
-- Open to: Full-time roles, freelance projects, international opportunities (Germany, Australia, UAE)
+- Open to: Full-time roles, freelance, international opportunities (Germany, Australia, UAE)
 
 ## Portfolio
 
 - Homepage: https://surajkchandravanshi.vercel.app/
 - Case Studies: https://surajkchandravanshi.vercel.app/#work
 - Services: https://surajkchandravanshi.vercel.app/#services
-- Experience: https://surajkchandravanshi.vercel.app/#experience
-- Skills: https://surajkchandravanshi.vercel.app/#skills
 - Contact: https://surajkchandravanshi.vercel.app/#contact
 
 ## Blog — Growth Logs
 
-A personal journal documenting experiments, systems, and lessons from real digital marketing work.
-
 - Index: https://surajkchandravanshi.vercel.app/growth-logs
 - How I Use AI to 10x My SEO Workflow: https://surajkchandravanshi.vercel.app/growth-logs/how-i-use-ai-to-10x-my-seo-workflow
 - 90-Day SEO Experiment: https://surajkchandravanshi.vercel.app/growth-logs/seo-ranking-case-study
-- Building My Portfolio in Public: https://surajkchandravanshi.vercel.app/growth-logs/building-this-portfolio
-- LinkedIn Content System: https://surajkchandravanshi.vercel.app/growth-logs/linkedin-content-system
-- Meta Ads Learnings: https://surajkchandravanshi.vercel.app/growth-logs/meta-ads-learnings
-- Freelancing to Agency: https://surajkchandravanshi.vercel.app/growth-logs/freelancing-to-agency
-- Keyword Research Process: https://surajkchandravanshi.vercel.app/growth-logs/keyword-research-process
-- Notion System for Marketers: https://surajkchandravanshi.vercel.app/growth-logs/notion-system-for-marketers
-- Personal Brand in India: https://surajkchandravanshi.vercel.app/growth-logs/personal-brand-in-india
-- AI Tools for Marketers 2025: https://surajkchandravanshi.vercel.app/growth-logs/ai-tools-for-marketers-2025
-- Working Abroad as a Marketer: https://surajkchandravanshi.vercel.app/growth-logs/moving-abroad-as-marketer
-- Google Ads Audit Checklist: https://surajkchandravanshi.vercel.app/growth-logs/google-ads-audit-checklist
 
-## Services Offered
+## Services
 
-- SEO strategy, technical audits, keyword research, on-page and off-page optimisation
-- Google Ads and Meta paid advertising campaign management
-- Social media strategy and content calendar management
-- WordPress website management and SEO publishing
-- Marketing performance reporting and analytics dashboards
+- SEO strategy, keyword research, on-page and off-page optimisation
+- Google Ads and Meta paid advertising
+- Social media strategy and content management
+- WordPress publishing and marketing reporting

@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Growth Logs — Suraj Kumar Chandravanshi</title>
-    <meta name="description" content="Notes, experiments, and lessons from my journey in AI, SEO and digital marketing. Updated weekly." />
+    <title>Growth Logs — Suraj Chandravanshi</title>
+    <meta name="description" content="Notes, experiments, and lessons from my journey in SEO, digital marketing, AI, and building in public. Updated when something real is worth sharing." />
     <link rel="canonical" href="https://surajkchandravanshi.vercel.app/growth-logs" />
+    <link rel="alternate" hreflang="en" href="https://surajkchandravanshi.vercel.app/growth-logs" />
+    <link rel="alternate" hreflang="x-default" href="https://surajkchandravanshi.vercel.app/growth-logs" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://surajkchandravanshi.vercel.app/growth-logs" />
-    <meta property="og:title" content="Growth Logs — Suraj Kumar Chandravanshi" />
-    <meta property="og:description" content="Notes, experiments, and lessons from my journey in AI, SEO and digital marketing. Updated weekly." />
+    <meta property="og:title" content="Growth Logs — Suraj Chandravanshi" />
+    <meta property="og:description" content="Notes, experiments, and lessons from my journey in SEO, digital marketing, AI, and building in public." />
     <meta property="og:image" content="https://surajkchandravanshi.vercel.app/assets/suraj-hero.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,152 +47,117 @@
 
       <!-- ═══ HERO ═══ -->
       <section class="gl-hero">
-        <!-- Animated growth SVG background -->
         <div class="gl-hero__svg-bg" aria-hidden="true">
           <svg class="gl-anim-svg" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="gl-grid" width="60" height="60" patternUnits="userSpaceOnUse">
-                <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(15,118,110,0.07)" stroke-width="1"/>
+                <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(13,148,136,0.07)" stroke-width="1"/>
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#gl-grid)" />
-            <!-- Growth chart line -->
-            <polyline class="gl-chart-line" points="40,480 160,420 280,390 360,320 460,280 560,200 640,230 720,160 820,120 920,80 1040,60 1160,30" fill="none" stroke="rgba(15,118,110,0.22)" stroke-width="2.5" stroke-dasharray="1500" stroke-dashoffset="1500"/>
-            <polygon class="gl-chart-area" points="40,480 160,420 280,390 360,320 460,280 560,200 640,230 720,160 820,120 920,80 1040,60 1160,30 1160,560 40,560" fill="rgba(15,118,110,0.04)"/>
-            <!-- Data points -->
-            <circle class="gl-dot-pop" cx="160" cy="420" r="4" fill="rgba(15,118,110,0.3)" style="animation-delay:0.4s"/>
-            <circle class="gl-dot-pop" cx="360" cy="320" r="4" fill="rgba(15,118,110,0.3)" style="animation-delay:0.7s"/>
-            <circle class="gl-dot-pop" cx="560" cy="200" r="5" fill="rgba(15,118,110,0.4)" style="animation-delay:1s"/>
-            <circle class="gl-dot-pop" cx="720" cy="160" r="4" fill="rgba(15,118,110,0.3)" style="animation-delay:1.3s"/>
-            <circle class="gl-dot-pop" cx="920" cy="80"  r="5" fill="rgba(15,118,110,0.4)" style="animation-delay:1.6s"/>
-            <circle class="gl-dot-pop" cx="1160" cy="30" r="6" fill="rgba(15,118,110,0.5)" style="animation-delay:1.9s"/>
-            <!-- Upward arrows -->
-            <g class="gl-arrow-float" style="animation-delay:0s"><path d="M 880 440 L 880 400 M 872 408 L 880 400 L 888 408" stroke="rgba(15,118,110,0.2)" stroke-width="1.5" fill="none" stroke-linecap="round"/></g>
-            <g class="gl-arrow-float" style="animation-delay:1s"><path d="M 1020 380 L 1020 340 M 1012 348 L 1020 340 L 1028 348" stroke="rgba(15,118,110,0.15)" stroke-width="1.5" fill="none" stroke-linecap="round"/></g>
-            <g class="gl-arrow-float" style="animation-delay:0.5s"><path d="M 950 470 L 950 430 M 942 438 L 950 430 L 958 438" stroke="rgba(15,118,110,0.12)" stroke-width="1.5" fill="none" stroke-linecap="round"/></g>
-            <!-- Network nodes (top left) -->
-            <line x1="100" y1="180" x2="200" y2="120" stroke="rgba(15,118,110,0.08)" stroke-width="1"/>
-            <line x1="150" y1="150" x2="100" y2="180" stroke="rgba(15,118,110,0.08)" stroke-width="1"/>
-            <line x1="150" y1="150" x2="200" y2="120" stroke="rgba(15,118,110,0.08)" stroke-width="1"/>
-            <circle class="gl-node" cx="100" cy="180" r="3.5" fill="rgba(15,118,110,0.2)" style="animation-delay:0s"/>
-            <circle class="gl-node" cx="200" cy="120" r="2.5" fill="rgba(15,118,110,0.15)" style="animation-delay:0.8s"/>
-            <circle class="gl-node" cx="150" cy="150" r="2"   fill="rgba(15,118,110,0.12)" style="animation-delay:0.4s"/>
-            <!-- Bar chart (right) -->
-            <rect class="gl-bar" x="1060" y="380" width="14" height="0" rx="2" fill="rgba(15,118,110,0.2)" style="animation-delay:2.1s" data-top="320" data-h="60"/>
-            <rect class="gl-bar" x="1078" y="380" width="14" height="0" rx="2" fill="rgba(15,118,110,0.25)" style="animation-delay:2.3s" data-top="300" data-h="80"/>
-            <rect class="gl-bar" x="1096" y="380" width="14" height="0" rx="2" fill="rgba(15,118,110,0.3)" style="animation-delay:2.5s" data-top="280" data-h="100"/>
-            <rect class="gl-bar" x="1114" y="380" width="14" height="0" rx="2" fill="rgba(15,118,110,0.38)" style="animation-delay:2.7s" data-top="260" data-h="120"/>
-            <!-- Pulse rings on peak -->
-            <circle class="gl-pulse-ring" cx="560" cy="200" r="8" fill="none" stroke="rgba(15,118,110,0.25)" stroke-width="1.5" style="animation-delay:2.2s"/>
-            <circle class="gl-pulse-ring" cx="560" cy="200" r="8" fill="none" stroke="rgba(15,118,110,0.12)" stroke-width="1" style="animation-delay:2.8s"/>
-            <!-- Labels -->
-            <text class="gl-label-fade" x="556" y="188" text-anchor="middle" font-size="8" fill="rgba(15,118,110,0.35)" font-family="Inter,sans-serif" font-weight="700" letter-spacing="0.5">PEAK</text>
-            <text class="gl-label-fade" x="1140" y="22" text-anchor="middle" font-size="8" fill="rgba(15,118,110,0.35)" font-family="Inter,sans-serif" font-weight="700" letter-spacing="0.5" style="animation-delay:0.5s">↑ GROWING</text>
+            <polyline class="gl-chart-line" points="40,480 160,420 280,390 360,320 460,280 560,200 640,230 720,160 820,120 920,80 1040,60 1160,30" fill="none" stroke="rgba(13,148,136,0.22)" stroke-width="2.5" stroke-dasharray="1500" stroke-dashoffset="1500"/>
+            <polygon class="gl-chart-area" points="40,480 160,420 280,390 360,320 460,280 560,200 640,230 720,160 820,120 920,80 1040,60 1160,30 1160,560 40,560" fill="rgba(13,148,136,0.04)"/>
+            <circle class="gl-dot-pop" cx="360" cy="320" r="4" fill="rgba(13,148,136,0.3)" style="animation-delay:0.7s"/>
+            <circle class="gl-dot-pop" cx="560" cy="200" r="5" fill="rgba(13,148,136,0.4)" style="animation-delay:1s"/>
+            <circle class="gl-dot-pop" cx="720" cy="160" r="4" fill="rgba(13,148,136,0.3)" style="animation-delay:1.3s"/>
+            <circle class="gl-dot-pop" cx="1160" cy="30" r="6" fill="rgba(13,148,136,0.5)" style="animation-delay:1.9s"/>
+            <g class="gl-arrow-float" style="animation-delay:0s"><path d="M 880 440 L 880 400 M 872 408 L 880 400 L 888 408" stroke="rgba(13,148,136,0.2)" stroke-width="1.5" fill="none" stroke-linecap="round"/></g>
+            <g class="gl-arrow-float" style="animation-delay:1s"><path d="M 1020 380 L 1020 340 M 1012 348 L 1020 340 L 1028 348" stroke="rgba(13,148,136,0.15)" stroke-width="1.5" fill="none" stroke-linecap="round"/></g>
+            <circle class="gl-pulse-ring" cx="560" cy="200" r="8" fill="none" stroke="rgba(13,148,136,0.25)" stroke-width="1.5" style="animation-delay:2.2s"/>
           </svg>
         </div>
-
         <div class="gl-hero__orb gl-hero__orb--1" aria-hidden="true"></div>
         <div class="gl-hero__orb gl-hero__orb--2" aria-hidden="true"></div>
         <div class="gl-hero__content gl-reveal">
           <div class="gl-hero__badge">
             <span class="gl-hero__badge-dot"></span>
-            Journal · Est. 2024
+            Personal Journal · Updated when it matters
           </div>
           <h1 class="gl-hero__title">Growth<br/>Logs</h1>
-          <p class="gl-hero__subtitle">Notes, systems, experiments, and lessons from my journey in AI, SEO, digital marketing, and building publicly.</p>
+          <p class="gl-hero__subtitle">Notes, systems, and lessons from real work in SEO, digital marketing, and building in public. No filler — only what actually taught me something.</p>
           <div class="gl-hero__stats">
-            <div class="gl-hero__stat"><strong>2</strong><span>Entries</span></div>
+            <div class="gl-hero__stat"><strong>2</strong><span>Articles</span></div>
             <div class="gl-hero__stat-divider"></div>
-            <div class="gl-hero__stat"><strong>Weekly</strong><span>Updates</span></div>
+            <div class="gl-hero__stat"><strong>Real</strong><span>Experience</span></div>
             <div class="gl-hero__stat-divider"></div>
             <div class="gl-hero__stat"><strong>Free</strong><span>Always</span></div>
           </div>
         </div>
       </section>
 
-      <!-- ═══ CONTROLS (SEARCH + FILTERS) ═══ -->
-      <section class="gl-controls">
-        <div class="gl-controls__inner">
-          <div class="gl-search-wrap">
-            <svg class="gl-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-            </svg>
-            <input class="gl-search" id="gl-search" type="search" placeholder="Search articles…" aria-label="Search Growth Logs" autocomplete="off" />
-          </div>
-          <div class="gl-filters" role="tablist" aria-label="Filter by category">
-            <button class="gl-filter active" data-filter="all" role="tab" aria-selected="true">All</button>
-            <button class="gl-filter" data-filter="ai-workflows" role="tab" aria-selected="false">AI Workflows</button>
-            <button class="gl-filter" data-filter="seo-journey" role="tab" aria-selected="false">SEO Journey</button>
-            <button class="gl-filter" data-filter="build-logs" role="tab" aria-selected="false">Build Logs</button>
-            <button class="gl-filter" data-filter="linkedin-branding" role="tab" aria-selected="false">LinkedIn &amp; Branding</button>
-            <button class="gl-filter" data-filter="career-notes" role="tab" aria-selected="false">Career Notes</button>
-          </div>
-        </div>
-      </section>
+      <!-- ═══ ARTICLES (2 only) ═══ -->
+      <section class="gl-articles-clean">
+        <div class="gl-articles-clean__inner">
 
-      <!-- ═══ FEATURED ARTICLE ═══ -->
-      <section class="gl-featured-section gl-reveal" id="featured">
-        <div class="gl-featured-section__inner">
-          <div class="gl-section-label">
-            <span class="gl-pill">✦ Featured</span>
-          </div>
-          <a class="gl-featured-card" href="growth-logs/how-i-use-ai-to-10x-my-seo-workflow.html" data-category="ai-workflows">
-            <div class="gl-featured-card__visual">
-              <div class="gl-thumb gl-thumb--ai">
-                <div class="gl-thumb__grid" aria-hidden="true"></div>
-                <span class="gl-thumb__emoji">🤖</span>
-              </div>
-              <div class="gl-featured-card__meta-mobile">
-                <span class="gl-tag gl-tag--ai">AI Workflows</span>
-                <time class="gl-date">May 5, 2025</time>
-              </div>
+          <!-- Featured — full card -->
+          <div class="gl-feature-row gl-reveal">
+            <div class="gl-feature-row__label">
+              <span class="gl-pill">✦ Featured</span>
             </div>
-            <div class="gl-featured-card__body">
-              <span class="gl-tag gl-tag--ai gl-tag--desktop">AI Workflows</span>
-              <h2 class="gl-featured-card__title">How I Use AI to 10× My SEO Workflow (Without Losing My Voice)</h2>
-              <p class="gl-featured-card__excerpt">Most marketers use AI wrong — they let it do the thinking. Here's the exact system I use to stay in control while shipping 3× more content, better keyword targeting, and smarter competitor analysis.</p>
-              <div class="gl-featured-card__foot">
-                <time class="gl-date gl-date--desktop">May 5, 2025</time>
+            <a class="gl-feature-card" href="growth-logs/how-i-use-ai-to-10x-my-seo-workflow.html">
+              <div class="gl-feature-card__visual">
+                <div class="gl-thumb gl-thumb--ai">
+                  <div class="gl-thumb__grid" aria-hidden="true"></div>
+                  <span class="gl-thumb__emoji">🤖</span>
+                </div>
+              </div>
+              <div class="gl-feature-card__body">
+                <span class="gl-tag gl-tag--ai">AI Workflows</span>
+                <h2 class="gl-feature-card__title">How I Use AI to 10× My SEO Workflow (Without Losing My Voice)</h2>
+                <p class="gl-feature-card__excerpt">Most marketers use AI wrong — they let it do the thinking. Here's the exact system I use to stay in control while shipping 3× more content, better keyword targeting, and smarter competitor analysis.</p>
+                <div class="gl-feature-card__foot">
+                  <time class="gl-date">May 5, 2025</time>
+                  <span class="gl-dot">·</span>
+                  <span class="gl-reading-time">8 min read</span>
+                  <span class="gl-arrow-link">
+                    Read article
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Divider -->
+          <div class="gl-article-divider gl-reveal">
+            <span>More articles</span>
+          </div>
+
+          <!-- Second article — smaller horizontal -->
+          <a class="gl-list-card gl-reveal" href="growth-logs/seo-ranking-case-study.html">
+            <div class="gl-list-card__thumb gl-thumb--seo">
+              <div class="gl-thumb__grid" aria-hidden="true"></div>
+              <span class="gl-thumb__emoji">📈</span>
+            </div>
+            <div class="gl-list-card__body">
+              <span class="gl-tag gl-tag--seo">SEO Journey</span>
+              <h3 class="gl-list-card__title">The 90-Day SEO Experiment That Changed How I Think About Rankings</h3>
+              <p class="gl-list-card__desc">I tracked every variable across 3 client sites for 90 days. What actually moved the needle surprised me.</p>
+              <div class="gl-list-card__foot">
+                <time class="gl-date">Apr 28, 2025</time>
                 <span class="gl-dot">·</span>
-                <span class="gl-reading-time">8 min read</span>
-                <span class="gl-arrow-link">Read article
-                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
-                  </svg>
-                </span>
+                <span class="gl-reading-time">6 min read</span>
               </div>
             </div>
           </a>
+
         </div>
       </section>
 
-      <!-- ═══ ARTICLES GRID ═══ -->
-<div class="gl-grid-header">
-  <span class="gl-section-label-text">All Entries</span>
-  <span class="gl-count-badge" id="gl-count">1 article</span>
-</div>
-
-<div class="gl-grid" id="gl-grid">
-
-  <a class="gl-card gl-reveal" href="growth-logs/seo-ranking-case-study.html" data-category="seo-journey" data-title="The 90-Day SEO Experiment That Changed How I Think About Rankings">
-    <div class="gl-thumb gl-thumb--seo"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">📈</span></div>
-    <div class="gl-card__body">
-      <span class="gl-tag gl-tag--seo">SEO Journey</span>
-      <h3 class="gl-card__title">The 90-Day SEO Experiment That Changed How I Think About Rankings</h3>
-      <p class="gl-card__desc">I tracked every variable across 3 client sites for 90 days. What actually moved the needle surprised me.</p>
-      <div class="gl-card__foot"><time class="gl-date">Apr 28, 2025</time><span class="gl-dot">·</span><span class="gl-reading-time">6 min read</span></div>
-    </div>
-  </a>
-
-</div>
-
-<div class="gl-coming-soon">
-  <p>✦ More entries coming soon — researching and writing properly.</p>
-</div>
-
-          <div class="gl-empty" id="gl-empty" hidden>
-            <span>🔍</span>
-            <p>No articles match. Try a different search or filter.</p>
+      <!-- ═══ COMING SOON (honest, premium) ═══ -->
+      <section class="gl-coming-soon gl-reveal">
+        <div class="gl-coming-soon__inner">
+          <div class="gl-coming-soon__icon" aria-hidden="true">✍️</div>
+          <h2 class="gl-coming-soon__title">More articles are being written.</h2>
+          <p class="gl-coming-soon__desc">I'm researching properly before publishing. No filler, no rushed content. Each article will be based on real campaign data, client work, and tested systems — worth your time to read.</p>
+          <div class="gl-coming-soon__topics">
+            <span>SEO case study with real numbers</span>
+            <span>Google Ads audit framework</span>
+            <span>LinkedIn content system</span>
+            <span>Keyword research process</span>
+            <span>Building a personal brand</span>
           </div>
         </div>
       </section>
@@ -198,14 +165,14 @@
       <!-- ═══ NEWSLETTER ═══ -->
       <section class="gl-newsletter gl-reveal">
         <div class="gl-newsletter__inner">
-          <span class="gl-kicker">Stay in the loop</span>
-          <h2 class="gl-newsletter__title">Get new logs in your inbox.</h2>
-          <p class="gl-newsletter__desc">No spam, no fluff — just one email when a new article drops. Usually once a week.</p>
+          <span class="gl-kicker">Get notified</span>
+          <h2 class="gl-newsletter__title">Be the first to read new logs.</h2>
+          <p class="gl-newsletter__desc">One email when something new drops. No spam, no frequency pressure. Just real articles when they're ready.</p>
           <form class="gl-newsletter__form" id="gl-form">
             <input class="gl-newsletter__input" type="email" placeholder="your@email.com" required aria-label="Email address" />
-            <button class="button primary" type="submit">Subscribe free</button>
+            <button class="button primary" type="submit">Notify me</button>
           </form>
-          <p class="gl-newsletter__note" id="gl-form-note">Join subscribers · Unsubscribe anytime</p>
+          <p class="gl-newsletter__note" id="gl-form-note">Unsubscribe anytime</p>
         </div>
       </section>
 
@@ -213,7 +180,10 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <p class="footer-copy">© 2025 Suraj Kumar Chandravanshi &nbsp;·&nbsp; <a href="/growth-logs">Growth Logs</a></p>
+        <div class="footer-brand">
+          <span>Suraj Kumar Chandravanshi</span>
+          <p>SEO &amp; Digital Marketing Specialist · Delhi, India</p>
+        </div>
         <div class="footer-socials" aria-label="Social links">
           <a href="https://www.linkedin.com/in/surajkofficial/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
@@ -225,6 +195,7 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           </a>
         </div>
+        <a class="back-top" href="#top">↑ Back to top</a>
       </div>
     </footer>
 
