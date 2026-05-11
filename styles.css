@@ -1,32 +1,36 @@
 :root {
-  /* ── NEW PREMIUM 2025 PALETTE ─────────────────────────────── */
-  --ink:        #0b0d14;          /* Deep rich black */
-  --muted:      #5a6270;          /* Neutral cool gray */
-  --line:       #e4e8ef;          /* Crisp border */
-  --paper:      #f7f8fc;          /* Cool off-white */
-  --white:      #ffffff;
+  /* ── CINEMATIC EDITORIAL PALETTE ────────────────────────────── */
+  --ink:        #13100d;   /* Warm rich black — not cold digital black */
+  --ink-soft:   #2a2520;   /* Warm dark for secondary text */
+  --muted:      #7a7168;   /* Warm stone gray */
+  --line:       #ddd5c5;   /* Warm parchment border */
+  --paper:      #f5f1e8;   /* Warm ivory — the editorial base */
+  --white:      #fdf9f3;   /* Cream white — never pure white */
 
-  /* Accent surfaces */
-  --sand:       #eef2ff;          /* Indigo tint (replaces warm sand) */
-  --sand-soft:  #f5f7ff;          /* Lighter indigo surface */
-  --mist:       #ecfdf5;          /* Fresh mint tint */
+  /* Warm surfaces */
+  --sand:       #ece4d2;   /* Medium parchment */
+  --sand-soft:  #f9f5ee;   /* Lightest warm surface */
+  --dark-surface: #1e1a15; /* Deep warm charcoal for dark sections */
+  --dark-mid:   #2d2820;   /* Medium dark surface */
+  --mist:       #e8f0ec;   /* Very subtle mint */
 
-  /* Primary accent — Electric Indigo-Teal */
-  --teal:       #0d9488;          /* Upgraded teal — richer, more vibrant */
-  --teal-mid:   #14b8a6;          /* Lighter teal for gradients */
-  --teal-glow:  rgba(13,148,136,0.18);
+  /* Primary accent — Deep bronze/amber */
+  --bronze:     #b8914a;   /* Warm editorial bronze */
+  --bronze-mid: #d4ac65;   /* Lighter bronze */
+  --teal:       #0d7a70;   /* Deeper, richer teal — less startup */
+  --teal-mid:   #14a89a;   /* Mid teal */
+  --teal-glow:  rgba(13,122,112,0.15);
 
   /* Supporting accents */
-  --blue:       #3b5bdb;          /* Premium indigo-blue */
-  --coral:      #f43f5e;          /* Vibrant rose-red */
-  --green:      #10b981;          /* Fresh emerald */
-  --violet:     #7c3aed;          /* Deep violet for gradients */
+  --coral:      #d4503a;   /* Muted warm coral */
+  --green:      #3a7a5a;   /* Deep editorial green */
+  --blue:       #2a4a8c;   /* Deep navy */
 
-  /* Shadows */
-  --shadow:       0 20px 60px rgba(11,13,20,0.10);
-  --shadow-strong:0 32px 80px rgba(11,13,20,0.18);
-  --shadow-teal:  0 16px 40px rgba(13,148,136,0.20);
-  --radius: 10px;
+  /* Shadows — warm-toned */
+  --shadow:        0 20px 60px rgba(19,16,13,0.10);
+  --shadow-strong: 0 32px 80px rgba(19,16,13,0.18);
+  --shadow-bronze: 0 16px 40px rgba(184,145,74,0.18);
+  --radius: 8px;
 }
 
 /* Scroll progress bar */
@@ -34,9 +38,9 @@
   position: fixed;
   top: 0; left: 0;
   z-index: 100;
-  height: 3px;
+  height: 2px;
   width: 0%;
-  background: linear-gradient(90deg, var(--teal), var(--teal-mid), var(--violet));
+  background: linear-gradient(90deg, var(--bronze), var(--bronze-mid), var(--teal));
   border-radius: 0 2px 2px 0;
   transition: width 80ms linear;
   pointer-events: none;
@@ -53,12 +57,11 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(13,148,136,0.06) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(124,58,237,0.04) 0%, transparent 50%),
-    var(--paper);
- font-family: "Source Sans 3", "Inter", sans-serif;
+  background: var(--paper);
+  font-family: "Source Sans 3", "Inter", sans-serif;
   line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -80,10 +83,10 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 16px clamp(18px, 4vw, 58px);
-  border-bottom: 1px solid rgba(11,13,20,0.07);
-  background: rgba(247,248,252,0.88);
-  backdrop-filter: blur(22px);
-  -webkit-backdrop-filter: blur(22px);
+  border-bottom: 1px solid var(--line);
+  background: rgba(245,241,232,0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }
 
 .brand,
@@ -174,24 +177,45 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 560px);
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 520px);
   gap: clamp(32px, 5vw, 80px);
   align-items: center;
-  min-height: calc(100vh - 76px);
-  padding: clamp(64px, 8vw, 112px) clamp(18px, 4vw, 58px) 58px;
+  min-height: calc(100vh - 70px);
+  padding: clamp(72px, 9vw, 120px) clamp(18px, 4vw, 58px) 64px;
   border-bottom: 1px solid var(--line);
   background:
-    radial-gradient(circle at 78% 30%, rgba(243, 223, 196, 0.8), rgba(243, 223, 196, 0) 32%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(232, 240, 236, 0.68));
+    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(184,145,74,0.07) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 60% at 10% 80%, rgba(13,122,112,0.05) 0%, transparent 50%),
+    var(--paper);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle noise texture overlay */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 .eyebrow,
-.section-kicker,
+.section-kicker {
+  color: var(--bronze);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .tag {
   color: var(--teal);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -277,8 +301,8 @@ h3 {
 
 .button.primary {
   color: var(--white);
-  background: linear-gradient(135deg, var(--teal), #0a7a73);
-  box-shadow: var(--shadow-teal);
+  background: linear-gradient(135deg, var(--ink), var(--ink-soft));
+  box-shadow: 0 12px 32px rgba(19,16,13,0.25);
 }
 
 .button.dark {
@@ -348,9 +372,9 @@ h3 {
   position: absolute;
   inset: 18px -18px -18px 18px;
   z-index: -1;
-  border: 1px solid rgba(13,148,136,0.2);
+  border: 1px solid rgba(184,145,74,0.25);
   border-radius: var(--radius);
-  background: linear-gradient(135deg, rgba(13,148,136,0.08), rgba(124,58,237,0.06));
+  background: linear-gradient(135deg, rgba(184,145,74,0.08), rgba(13,122,112,0.06));
   content: "";
 }
 
@@ -728,9 +752,9 @@ h3 {
   padding: clamp(64px, 9vw, 122px) clamp(18px, 4vw, 58px);
   color: var(--white);
   background:
-    radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(135deg, #06090f 0%, #0d1a2e 50%, #0b1a1f 100%);
-  background-size: 28px 28px, 100% 100%;
+    radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(135deg, var(--dark-surface) 0%, #1a130c 60%, #0f1a15 100%);
+  background-size: 32px 32px, 100% 100%;
 }
 
 /* Studying badge */
@@ -1410,9 +1434,9 @@ h3 {
    PREMIUM 2025 ADDITIONS
    ================================================================ */
 
-/* Gradient text on h1 - Merriweather Black, SEJ editorial style */
+/* Gradient text on h1 - Merriweather Black, warm editorial */
 h1 {
-  background: linear-gradient(135deg, var(--ink) 0%, #1a2a3a 70%, var(--teal) 100%);
+  background: linear-gradient(150deg, var(--ink) 0%, var(--ink-soft) 55%, var(--bronze) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1449,7 +1473,7 @@ h1 {
   width: 28px;
   height: 2px;
   margin-top: 4px;
-  background: linear-gradient(90deg, var(--teal), var(--violet));
+  background: linear-gradient(90deg, var(--teal), var(--bronze));
   border-radius: 2px;
 }
 
@@ -1594,4 +1618,319 @@ h1 {
 .work-card--seo  { border-top-color: var(--teal); }
 .work-card--paid { border-top-color: var(--coral); }
 .work-card--social { border-top-color: var(--green); }
+
+
+/* ================================================================
+   CINEMATIC EDITORIAL REBRAND — New Component Styles
+   ================================================================ */
+
+/* ── HERO META DOTS ─────────────────────────────────────────── */
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+.hero-meta-dot { color: var(--bronze); opacity: 0.6; }
+
+/* Hero availability card — updated warm */
+.availability {
+  position: absolute;
+  bottom: 24px;
+  left: -20px;
+  background: var(--dark-surface);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 14px 18px;
+  border: 1px solid rgba(184,145,74,0.2);
+}
+.availability strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--bronze-mid);
+  margin-bottom: 3px;
+}
+.availability span {
+  font-size: 0.76rem;
+  color: rgba(255,255,255,0.55);
+  font-weight: 500;
+}
+
+/* ── METRICS — WARM EDITORIAL ───────────────────────────────── */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--line);
+  background: var(--sand);
+}
+
+.metrics article {
+  padding: clamp(24px, 3vw, 40px) clamp(16px, 2vw, 32px);
+  border-right: 1px solid var(--line);
+}
+.metrics article:last-child { border-right: none; }
+
+.metrics strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  line-height: 1;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 900;
+}
+
+.metrics span {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+/* ── NAV — WARM EDITORIAL ───────────────────────────────────── */
+.site-nav a.nav-active { color: var(--bronze); }
+.site-nav a.nav-active::after { background: var(--bronze); }
+.site-nav a:hover { color: var(--ink); }
+
+/* ── SECTION KICKER — BRONZE UNDERLINE ─────────────────────── */
+.section-kicker::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin-top: 5px;
+  background: var(--bronze);
+  border-radius: 2px;
+}
+
+/* ── PROCESS CARD NUMBERS — BRONZE ─────────────────────────── */
+.process-card span {
+  color: var(--bronze) !important;
+  background: rgba(184,145,74,0.08) !important;
+  border-color: rgba(184,145,74,0.2) !important;
+}
+
+/* ── WORK CARD BORDERS — EDITORIAL COLORS ──────────────────── */
+.work-card--seo  { border-top-color: var(--teal); }
+.work-card--paid { border-top-color: var(--coral); }
+.work-card--social { border-top-color: var(--bronze); }
+.work-card:hover { box-shadow: 0 24px 60px rgba(19,16,13,0.12); }
+
+.work-stat {
+  background: rgba(184,145,74,0.06);
+  border-left-color: var(--bronze);
+}
+.work-card--paid .work-stat { border-left-color: var(--coral); background: rgba(212,80,58,0.05); }
+.work-card--social .work-stat { border-left-color: var(--green); background: rgba(58,122,90,0.05); }
+
+/* ── TOOL CARDS — WARM ──────────────────────────────────────── */
+.tool-card:hover {
+  border-color: rgba(184,145,74,0.3);
+  box-shadow: 0 12px 30px rgba(184,145,74,0.08);
+}
+
+/* ── SKILL BARS — TEAL (keep readable) ─────────────────────── */
+.skill-bar-fill {
+  background: linear-gradient(90deg, var(--teal), var(--teal-mid));
+}
+.skill-pct { color: var(--teal); }
+.skills-section .section-kicker { color: var(--white); }
+.skills-section .section-kicker::after { background: rgba(255,255,255,0.4); }
+
+/* ── TOOLS SECTION BACKGROUND ───────────────────────────────── */
+.tools-section { background: var(--sand); border-radius: 20px; }
+
+/* ── STUDYING BADGE ─────────────────────────────────────────── */
+.studying-badge { background: rgba(184,145,74,0.1); color: var(--bronze); }
+.studying-badge::before { background: var(--bronze); }
+
+/* ── FOOTER SOCIALS ─────────────────────────────────────────── */
+.footer-socials a:hover {
+  border-color: rgba(184,145,74,0.4);
+  background: var(--sand);
+  transform: translateY(-2px);
+}
+
+/* ── BRAND MARK ─────────────────────────────────────────────── */
+.brand-mark {
+  background: var(--ink);
+  animation: none;
+}
+
+/* ── LINKEDIN REC LINK ──────────────────────────────────────── */
+.linkedin-rec-link { color: var(--bronze); }
+.linkedin-rec-link:hover { gap: 10px; }
+.testimonials-footer .linkedin-rec-link {
+  border-color: rgba(184,145,74,0.25);
+}
+.testimonials-footer .linkedin-rec-link:hover {
+  background: rgba(184,145,74,0.06);
+  gap: 10px;
+}
+
+/* ── CONTACT SECTION OVERRIDES ──────────────────────────────── */
+.contact-section .section-kicker { color: rgba(255,255,255,0.5); }
+.contact-section .section-kicker::after { background: rgba(184,145,74,0.5); }
+.contact-section h2 {
+  background: linear-gradient(135deg, #fff, rgba(255,255,255,0.85));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.contact-section p { color: rgba(255,255,255,0.65); }
+
+/* ── HERO PROOF — REMOVE (using meta instead) ───────────────── */
+.hero-proof { display: none; }
+.hero-secondary { display: none; }
+
+/* ── HERO BACKGROUND OVERLAY ────────────────────────────────── */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 70% 10%, rgba(184,145,74,0.07) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(13,122,112,0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-copy, .hero-visual { position: relative; z-index: 1; }
+
+/* ================================================================
+   EDITORIAL PULL QUOTES — Testimonials
+   ================================================================ */
+.testimonials-editorial {
+  padding: clamp(64px, 8vw, 100px) clamp(18px, 4vw, 58px);
+  background: var(--dark-surface);
+  color: var(--white);
+}
+
+.testimonials-editorial .section-heading { margin-bottom: clamp(48px, 6vw, 72px); }
+
+.testimonials-editorial .section-kicker {
+  color: var(--bronze-mid);
+}
+.testimonials-editorial .section-kicker::after {
+  background: var(--bronze);
+}
+.testimonials-editorial h2 {
+  background: linear-gradient(135deg, var(--white), rgba(255,255,255,0.8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.quotes-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.pull-quote {
+  position: relative;
+  padding: clamp(36px, 5vw, 56px) 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin: 0;
+}
+.pull-quote:last-of-type { border-bottom: 1px solid rgba(255,255,255,0.08); }
+
+.pull-quote--right {
+  padding-left: clamp(32px, 6vw, 80px);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.pull-quote__mark {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: clamp(5rem, 10vw, 8rem);
+  font-weight: 900;
+  color: var(--bronze);
+  opacity: 0.25;
+  line-height: 0.7;
+  margin-bottom: 16px;
+  user-select: none;
+}
+
+.pull-quote__text {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.88);
+  margin: 0 0 28px;
+  max-width: 700px;
+}
+
+.pull-quote__credit {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.pull-quote__dash {
+  font-size: 1.2rem;
+  color: var(--bronze);
+  font-weight: 700;
+}
+
+.pull-quote__credit strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--white);
+  font-style: normal;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.pull-quote__credit span {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+}
+
+.testimonials-footer {
+  text-align: center;
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ── ABOUT SECTION — WARM EDITORIAL ─────────────────────────── */
+.intro { background: var(--sand-soft); }
+.intro h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+
+/* ── TIMELINE ACCENT ────────────────────────────────────────── */
+.timeline-item::before { background: var(--bronze); }
+.timeline-item span { color: var(--bronze); }
+
+/* ================================================================
+   REVEAL ANIMATIONS — Smoother, Cinematic
+   ================================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .pull-quote--right { padding-left: 0; }
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+  .metrics article { border-bottom: 1px solid var(--line); }
+  .testimonials-editorial { padding: 48px 20px; }
+}
 
