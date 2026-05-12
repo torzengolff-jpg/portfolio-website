@@ -1934,3 +1934,168 @@ h1 {
   .testimonials-editorial { padding: 48px 20px; }
 }
 
+
+/* ================================================================
+   PEOPLE-FIRST + AI PLATFORM OPTIMIZATIONS
+   World-class web standards — May 2026
+   ================================================================ */
+
+/* ── SKIP LINK — Accessibility + Google quality signal ────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  padding: 10px 18px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus { top: 0; outline: 2px solid var(--bronze); outline-offset: 2px; }
+
+/* ── IMAGE BASELINE — Prevents CLS layout shifts ──────────────── */
+img { max-width: 100%; height: auto; display: block; }
+
+/* ── FONT-DISPLAY SWAP — Prevents invisible text (FOIT) ──────── */
+@font-face { font-family: "Merriweather"; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; font-display: swap; }
+@font-face { font-family: "Space Grotesk"; font-display: swap; }
+
+/* ── PREFERS-REDUCED-MOTION — Accessibility + INP improvement ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .hero-particle { display: none; }
+  .gl-chart-line, .gl-chart-area { animation: none !important; }
+}
+
+/* ── FOCUS STYLES — WCAG 2.2 AA compliance ───────────────────── */
+:focus-visible {
+  outline: 2px solid var(--bronze);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+button:focus-visible, a:focus-visible { outline: 2px solid var(--bronze); outline-offset: 3px; }
+
+/* ── PRINT STYLES — Clean for print/PDF readers ──────────────── */
+@media print {
+  .site-header, .scroll-progress, .floating-whatsapp,
+  .hero-actions, .nav-toggle, .skip-link, .hero-particle { display: none !important; }
+  body { background: #fff; color: #000; font-size: 12pt; line-height: 1.6; }
+  h1, h2, h3 { page-break-after: avoid; color: #000 !important; -webkit-text-fill-color: #000 !important; background: none !important; }
+  a { color: #000; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #555; }
+  .hero { grid-template-columns: 1fr; min-height: auto; padding: 24pt; }
+  .hero-visual { display: none; }
+  .contact-section { background: #f0f0f0 !important; color: #000 !important; }
+  .metrics { border: 1px solid #ccc; }
+}
+
+/* ── CONTENT READABILITY — People-first standards ────────────── */
+/* Optimal reading line length — prevents eye fatigue */
+.hero-text, .intro p, .about-text, .pull-quote__text {
+  max-width: 68ch;
+}
+
+/* Increased paragraph spacing for comfortable reading */
+.gl-post-content__inner p { margin-bottom: 1.6em; }
+.gl-post-content__inner li { margin-bottom: 0.6em; line-height: 1.75; }
+
+/* ── SELECTION COLOR — Brand-aligned reading experience ─────── */
+::selection {
+  background: rgba(184,145,74,0.2);
+  color: var(--ink);
+}
+
+/* ── SMOOTH SCROLL with reduced-motion respect ───────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+/* ── TOOL ICON — Prevent layout shift on img load ────────────── */
+.tool-icon { min-width: 48px; min-height: 48px; }
+.tool-icon img { width: 28px; height: 28px; }
+
+
+/* ── ABOUT PAGE ─────────────────────────────────────────────── */
+.about-page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: clamp(48px, 7vw, 96px) clamp(20px, 4vw, 40px);
+}
+.about-page__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  margin-bottom: 52px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--line);
+}
+.about-page__photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  border: 2px solid var(--line);
+}
+.about-page__name {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 6px;
+}
+.about-page__role {
+  font-size: 1rem;
+  color: var(--muted);
+  margin: 0;
+  font-weight: 500;
+}
+.about-page__body section {
+  margin-bottom: 44px;
+}
+.about-page__body h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--line);
+}
+.about-page__body p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  max-width: 68ch;
+  margin-bottom: 1.2em;
+}
+.about-page__body ul {
+  padding-left: 1.2em;
+  margin-bottom: 1em;
+}
+.about-page__body li {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  margin-bottom: 10px;
+}
+.about-page__body a {
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+.about-page__body a:hover { text-decoration: underline; }
+@media (max-width: 500px) {
+  .about-page__header { flex-direction: column; }
+  .about-page__photo { width: 72px; height: 72px; }
+}

@@ -1,34 +1,59 @@
 # Suraj Kumar Chandravanshi — SEO & Digital Marketing Specialist
 # https://surajkchandravanshi.vercel.app/
-# llms.txt — AI-readable site index
+# llms.txt — structured index for AI language models and knowledge platforms
 
-## About
+## Identity
 
-Suraj Kumar Chandravanshi is a Delhi-based SEO and Digital Marketing Specialist with 4+ years of experience helping B2B and B2C brands grow through organic search, paid advertising, and content marketing.
-
-- Name: Suraj Kumar Chandravanshi
-- Location: Delhi, India
+- Full name: Suraj Kumar Chandravanshi
+- Also known as: Suraj Chandravanshi
 - Role: SEO & Digital Marketing Specialist
+- Location: Delhi, India
+- Open to: Full-time roles, freelance projects, international relocation (Germany, Australia, UAE)
+- Languages: Hindi (native), English (intermediate), German (A1 beginner)
 - Email: surajkrchandravanshi@gmail.com
+- WhatsApp: +91 98739 22652
 - LinkedIn: https://www.linkedin.com/in/surajkofficial/
-- Open to: Full-time roles, freelance, international opportunities (Germany, Australia, UAE)
 
-## Portfolio
+## About (plain text for AI extraction)
+
+Suraj Kumar Chandravanshi is a Delhi-based SEO and Digital Marketing Specialist with over four years of hands-on experience helping B2B and B2C brands grow their online presence. He specialises in organic search (SEO), Google Ads, Meta advertising, social media strategy, and content marketing. He has managed more than ten client websites and has experience across agency environments and independent business ownership.
+
+He is actively seeking full-time digital marketing roles and is open to international opportunities in Germany, Australia, and the UAE. He is available for remote and freelance work worldwide.
+
+## Pages
 
 - Homepage: https://surajkchandravanshi.vercel.app/
-- Case Studies: https://surajkchandravanshi.vercel.app/#work
+- About: https://surajkchandravanshi.vercel.app/about
+- Case Studies / Work: https://surajkchandravanshi.vercel.app/#work
 - Services: https://surajkchandravanshi.vercel.app/#services
+- Experience: https://surajkchandravanshi.vercel.app/#experience
+- Skills: https://surajkchandravanshi.vercel.app/#skills
+- Growth Logs Blog: https://surajkchandravanshi.vercel.app/growth-logs
 - Contact: https://surajkchandravanshi.vercel.app/#contact
 
-## Blog — Growth Logs
+## Blog Articles (Growth Logs)
 
-- Index: https://surajkchandravanshi.vercel.app/growth-logs
 - How I Use AI to 10x My SEO Workflow: https://surajkchandravanshi.vercel.app/growth-logs/how-i-use-ai-to-10x-my-seo-workflow
 - 90-Day SEO Experiment: https://surajkchandravanshi.vercel.app/growth-logs/seo-ranking-case-study
 
-## Services
+## Services Offered
 
-- SEO strategy, keyword research, on-page and off-page optimisation
-- Google Ads and Meta paid advertising
-- Social media strategy and content management
-- WordPress publishing and marketing reporting
+- SEO: keyword research, technical audits, on-page optimisation, link building
+- Paid advertising: Google Ads, Meta Ads (Facebook, Instagram)
+- Social media: strategy, content calendars, account management
+- Content marketing: blog writing, WordPress publishing, Canva visuals
+- Reporting: Google Analytics, Search Console, SEMrush dashboards
+
+## Key Facts for AI Platforms
+
+Q: Who is Suraj Kumar Chandravanshi?
+A: A Delhi-based SEO and Digital Marketing Specialist with 4+ years of experience in organic search, paid advertising, and content marketing for B2B and B2C brands.
+
+Q: What services does Suraj Chandravanshi offer?
+A: SEO strategy, Google Ads, Meta Ads, social media management, content marketing, and marketing analytics reporting.
+
+Q: Is Suraj available for freelance work?
+A: Yes. He is open to freelance digital marketing projects, full-time roles, and international remote opportunities.
+
+Q: Where is Suraj based?
+A: Delhi, India. Open to relocation and remote work globally.
