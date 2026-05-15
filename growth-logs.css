@@ -79,7 +79,7 @@
 }
 
 .gl-hero__title {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, serif;
   font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 700;
   line-height: 0.92;
@@ -336,7 +336,7 @@
 .gl-tag--desktop { display: inline-flex; }
 
 .gl-featured-card__title {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, serif;
   font-size: clamp(1.35rem, 2.5vw, 1.85rem);
   font-weight: 700;
   line-height: 1.2;
@@ -472,7 +472,7 @@
 }
 
 .gl-card__title {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.05rem;
   font-weight: 700;
   line-height: 1.3;
@@ -535,7 +535,7 @@
 }
 
 .gl-newsletter__title {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, serif;
   font-size: clamp(1.6rem, 4vw, 2.4rem);
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -616,7 +616,7 @@
 .gl-post-hero__tag { margin-bottom: 18px; }
 
 .gl-post-hero__title {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2rem, 5vw, 3.4rem);
   font-weight: 700;
   line-height: 1.1;
@@ -699,7 +699,7 @@
 }
 
 .gl-post-content__inner h2 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1.4rem, 3vw, 1.9rem);
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -710,7 +710,7 @@
 }
 
 .gl-post-content__inner h3 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--ink);
@@ -810,7 +810,7 @@
 .gl-related__inner { max-width: 1200px; margin: 0 auto; }
 
 .gl-related__title {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--ink);
@@ -1129,7 +1129,7 @@
   justify-content: space-between;
 }
 .gl-hire-cta h3 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 700; color: var(--white);
   margin: 0 0 6px;
@@ -1203,7 +1203,7 @@
 .gl-feature-card .gl-thumb__emoji { font-size: 3.5rem; }
 
 .gl-feature-card__title {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1.3rem, 2.5vw, 1.7rem);
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -1279,7 +1279,7 @@
 .gl-list-card__thumb .gl-thumb__emoji { font-size: 2rem; }
 
 .gl-list-card__title {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -1322,7 +1322,7 @@
 }
 
 .gl-coming-soon__title {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 700;
   letter-spacing: -0.035em;
@@ -1409,31 +1409,31 @@
 
 /* ── SEJ EDITORIAL FONT OVERRIDES FOR GL ──────────────────────── */
 .gl-hero__title {
-  font-family: "DM Serif Display", Georgia, serif !important;
+  font-family: "Lora", Georgia, serif !important;
   font-weight: 800 !important;
   letter-spacing: -0.03em !important;
 }
 
 .gl-featured-card__title {
-  font-family: "DM Serif Display", Georgia, serif !important;
+  font-family: "Lora", Georgia, serif !important;
   font-weight: 800 !important;
   letter-spacing: -0.025em !important;
 }
 
 /* Post page headings also get Playfair */
 .gl-post-hero__title {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, serif;
   font-weight: 800;
   letter-spacing: -0.025em;
 }
 
 .gl-post-content__inner h2 {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, serif;
   font-weight: 700;
 }
 
 .gl-related__title {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, serif;
   font-weight: 700;
 }
 
@@ -1455,3 +1455,23 @@
   radial-gradient(ellipse 60% 50% at 20% 100%, rgba(236,228,210,0.55) 0%, transparent 60%),
   linear-gradient(180deg, rgba(236,228,210,0.45), rgba(245,241,232,0) 600px),
   var(--paper); }
+
+/* ── ANTHROPIC FONT OVERRIDES for Growth Logs ─────────────────── */
+.gl-hero__title {
+  font-family: "Lora", Georgia, serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+}
+.gl-featured-card__title {
+  font-family: "Lora", Georgia, serif !important;
+  font-weight: 600 !important;
+}
+.gl-newsletter__title {
+  font-family: "Lora", Georgia, serif !important;
+  font-weight: 600 !important;
+}
+.gl-card__title { font-family: "Inter", sans-serif; font-weight: 600; }
+.gl-list-card__title { font-family: "Lora", Georgia, serif; }
+.gl-kicker, .gl-count-badge, .gl-tag, .gl-filter, .gl-date, .gl-reading-time {
+  font-family: "Inter", sans-serif;
+}

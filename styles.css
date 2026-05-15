@@ -63,7 +63,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -103,7 +103,7 @@ a {
 
 .brand {
   gap: 10px;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: -0.5px;
 }
@@ -239,7 +239,7 @@ p {
 
 h1,
 h2 {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   letter-spacing: -0.025em;
   font-weight: 900;
 }
@@ -248,7 +248,7 @@ h1 {
   max-width: 720px;
   margin-bottom: 24px;
   font-size: clamp(2.6rem, 5.8vw, 5rem);
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-weight: 900;
   line-height: 1.05;
   letter-spacing: -0.025em;
@@ -269,7 +269,7 @@ h2 {
 h3 {
   margin-bottom: 10px;
   font-size: 1.1rem;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 1.35;
   letter-spacing: -0.01em;
@@ -462,7 +462,7 @@ h3 {
   color: var(--ink);
   font-size: clamp(1.45rem, 3vw, 2.45rem);
   line-height: 1;
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-weight: 900;
 }
 
@@ -576,7 +576,7 @@ h3 {
   color: var(--bronze);
   background: rgba(184,145,74,0.08);
   border: 1.5px solid rgba(184,145,74,0.2);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   font-weight: 800;
 }
@@ -1353,7 +1353,7 @@ h3 {
 }
 
 .pull-quote__mark {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-size: clamp(5rem, 10vw, 8rem);
   font-weight: 900;
   color: var(--bronze);
@@ -1364,7 +1364,7 @@ h3 {
 }
 
 .pull-quote__text {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-size: clamp(1.1rem, 2.2vw, 1.45rem);
   font-weight: 400;
   font-style: italic;
@@ -1392,13 +1392,13 @@ h3 {
   font-weight: 700;
   color: var(--white);
   font-style: normal;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .pull-quote__credit span {
   font-size: 0.78rem;
   color: rgba(255,255,255,0.45);
-  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-style: normal;
 }
 
@@ -1613,8 +1613,8 @@ h3 {
    ================================================================ */
 
 /* font-display swap for DM fonts */
-@font-face { font-family: "DM Sans"; font-display: swap; }
-@font-face { font-family: "DM Serif Display"; font-display: swap; }
+@font-face { font-family: "Inter"; font-display: swap; }
+@font-face { font-family: "Lora"; font-display: swap; }
 
 /* DM Sans uses optical sizing — enable it */
 body {
@@ -1624,7 +1624,7 @@ body {
 
 /* DM Serif Display headings — editorial weight */
 h1, h2 {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-weight: 400; /* DM Serif Display only has weight 400 - it's inherently bold-looking */
   letter-spacing: -0.02em;
 }
@@ -1640,7 +1640,7 @@ h2 {
 }
 
 h3 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.08rem;
   letter-spacing: -0.01em;
@@ -1648,28 +1648,127 @@ h3 {
 }
 
 /* Nav — DM Sans medium weight (matches Anthropic's nav) */
-.site-nav { font-family: "DM Sans", sans-serif; font-weight: 500; }
-.brand span { font-family: "DM Sans", sans-serif; font-weight: 600; }
+.site-nav { font-family: "Inter", sans-serif; font-weight: 500; }
+.brand span { font-family: "Inter", sans-serif; font-weight: 600; }
 
 /* Buttons — DM Sans semibold */
-.button { font-family: "DM Sans", sans-serif; font-weight: 600; }
+.button { font-family: "Inter", sans-serif; font-weight: 600; }
 
 /* Section kickers — DM Sans bold */
 .section-kicker, .eyebrow, .tag {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
 }
 
 /* Pull quote text — DM Serif Display italic */
 .pull-quote__text {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: 400;
 }
 
 /* Metrics numbers — DM Serif Display */
 .metrics strong {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-weight: 400;
 }
+
+
+/* ================================================================
+   ANTHROPIC BLOG EXACT FONT SYSTEM
+   Lora (Tiempos Text equivalent) + Inter (Anthropic Sans equivalent)
+   ================================================================ */
+
+/* font-display swap */
+@font-face { font-family: "Lora"; font-display: swap; }
+@font-face { font-family: "Inter"; font-display: swap; }
+
+/* BODY — Inter, Anthropic's clean humanist sans */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.72;
+  letter-spacing: -0.003em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+/* H1 — Lora medium weight, editorial, generous size */
+h1 {
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 5.5vw, 4.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* H2 — Lora, section headings */
+h2 {
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: clamp(1.7rem, 3.6vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.018em;
+}
+
+/* H3 — Inter semibold (UI labels, card titles) */
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+/* Nav — Inter medium, exactly like Anthropic's nav */
+.site-nav { font-family: "Inter", sans-serif; font-weight: 500; font-size: 0.9rem; }
+.brand span { font-family: "Inter", sans-serif; font-weight: 600; }
+
+/* Buttons — Inter semibold */
+.button { font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: -0.005em; }
+
+/* Section kickers / tags — Inter bold caps */
+.section-kicker, .eyebrow, .tag {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+/* Testimonial pull quotes — Lora italic (editorial serif) */
+.pull-quote__text {
+  font-family: "Lora", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  line-height: 1.65;
+}
+
+/* Metrics numbers — Lora, editorial figures */
+.metrics strong {
+  font-family: "Lora", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+/* Blog post body — Inter at 400, very readable */
+.gl-post-content__inner {
+  font-family: "Inter", sans-serif;
+  font-size: 1.07rem;
+  line-height: 1.8;
+  letter-spacing: -0.003em;
+}
+
+/* Blog post headings — Lora */
+.gl-post-hero__title,
+.gl-post-content__inner h2,
+.gl-post-content__inner h3,
+.gl-related__title {
+  font-family: "Lora", Georgia, serif;
+}
+
+/* About page */
+.about-page__body p { font-family: "Inter", sans-serif; line-height: 1.78; }
+.about-page__name { font-family: "Lora", Georgia, serif; }
 
