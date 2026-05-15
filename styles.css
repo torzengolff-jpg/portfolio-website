@@ -77,12 +77,15 @@ img {
   max-width: 100%;
 }
 
-svg {
-  width: 24px;
-  height: 24px;
-  max-width: 24px;
-  max-height: 24px;
+.footer-socials svg {
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
   flex-shrink: 0;
+}
 }
 
 a {
