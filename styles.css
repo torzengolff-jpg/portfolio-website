@@ -119,6 +119,8 @@ a {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: -0.5px;
+   color: var(--ink);         
+  text-decoration: none; 
 }
 
 .brand-mark {
@@ -150,6 +152,7 @@ a {
 .site-nav a:hover,
 .site-nav a:focus-visible {
   color: var(--ink);
+   text-decoration: none;
 }
 
 .site-nav a.nav-active {
@@ -944,8 +947,7 @@ h3 {
   border-color: rgba(184,145,74,0.4);
   background: var(--sand);
   transform: translateY(-2px);
-}
-
+   
 .footer-socials svg {
   width: 20px !important;
   height: 20px !important;
