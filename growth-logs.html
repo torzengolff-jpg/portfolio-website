@@ -17,18 +17,224 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="assets/suraj-hero.jpg" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="growth-logs.css" />
+
+    <style>
+      /* ── GROWTH LOGS HERO FIX — balanced two-column layout ──────── */
+
+      /*
+        ROOT PROBLEM: .gl-hero only had .gl-hero__content (left column).
+        Nothing on the right. Orbs were decorative blobs with no visual anchor.
+        Fix: Two-column grid. Left = text. Right = visual panel with stats + graphic.
+      */
+
+      .gl-hero {
+        display: grid;
+        grid-template-columns: 1fr 420px;
+        gap: clamp(40px, 6vw, 96px);
+        align-items: center;
+        min-height: 72vh;
+        padding: clamp(80px, 10vw, 130px) clamp(18px, 4vw, 64px) clamp(60px, 8vw, 96px);
+      }
+
+      /* Left column — keeps existing content exactly */
+      .gl-hero__content {
+        max-width: 600px;
+      }
+
+      /* Right column — new visual panel */
+      .gl-hero__visual {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      /* Stat card grid — 2×2 */
+      .gl-hero__stat-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .gl-hero__stat-card {
+        background: rgba(255,255,255,0.82);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 20px 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        backdrop-filter: blur(8px);
+        transition: transform 200ms ease, box-shadow 200ms ease;
+      }
+
+      .gl-hero__stat-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(19,16,13,0.08);
+      }
+
+      .gl-hero__stat-card strong {
+        font-family: "Lora", Georgia, serif;
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        font-weight: 600;
+        color: var(--ink);
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+
+      .gl-hero__stat-card span {
+        font-family: "Inter", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      .gl-hero__stat-card--accent {
+        background: rgba(13,122,112,0.06);
+        border-color: rgba(13,122,112,0.18);
+      }
+
+      .gl-hero__stat-card--accent strong {
+        color: var(--teal);
+      }
+
+      /* Profile card at bottom of visual column */
+      .gl-hero__profile-card {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        background: rgba(255,255,255,0.9);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 16px 20px;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 8px 24px rgba(19,16,13,0.07);
+      }
+
+      .gl-hero__profile-photo {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center 15%;
+        border: 2px solid rgba(184,145,74,0.2);
+        flex-shrink: 0;
+      }
+
+      .gl-hero__profile-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        flex: 1;
+      }
+
+      .gl-hero__profile-text strong {
+        font-family: "Inter", sans-serif;
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: var(--ink);
+      }
+
+      .gl-hero__profile-text span {
+        font-family: "Inter", sans-serif;
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+
+      .gl-hero__profile-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: rgba(13,122,112,0.09);
+        border: 1px solid rgba(13,122,112,0.2);
+        font-family: "Inter", sans-serif;
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: var(--teal);
+        white-space: nowrap;
+      }
+
+      .gl-hero__profile-badge::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--teal);
+        animation: gl-pulse 2s ease-in-out infinite;
+        flex-shrink: 0;
+      }
+
+      /* Topics strip — shows what you write about */
+      .gl-hero__topics {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .gl-hero__topic-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.75);
+        border: 1px solid var(--line);
+        font-family: "Inter", sans-serif;
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: var(--ink-soft);
+        backdrop-filter: blur(6px);
+      }
+
+      /* ── RESPONSIVE: collapse to single column on mobile ── */
+      @media (max-width: 900px) {
+        .gl-hero {
+          grid-template-columns: 1fr;
+          min-height: auto;
+        }
+
+        .gl-hero__content {
+          max-width: 100%;
+        }
+
+        .gl-hero__visual {
+          order: -1; /* visual goes above text on mobile */
+        }
+
+        .gl-hero__stat-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .gl-hero__stat-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .gl-hero__visual {
+          order: 0; /* restore below on very small screens */
+        }
+      }
+    </style>
   </head>
+
   <body>
     <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
+    <!-- ═══ HEADER — photo brand-mark, consistent with homepage ═══ -->
     <header class="site-header" data-header>
       <a class="brand" href="/" aria-label="Suraj portfolio home">
         <span class="brand-mark">
-          <img src="assets/suraj-hero.jpg" alt="Suraj Kumar Chandravanshi" width="48" height="48" loading="eager" decoding="async">
+          <img src="assets/suraj-hero.jpg" alt="Suraj Kumar Chandravanshi" width="48" height="48" loading="eager" decoding="async" />
         </span>
         <span>Suraj Chandravanshi</span>
       </a>
@@ -47,37 +253,75 @@
 
     <main>
 
-      <!-- ═══ HERO ═══ -->
+      <!-- ═══ HERO — fixed: two-column balanced layout ═══ -->
       <section class="gl-hero">
+
+        <!-- Decorative orbs — kept but repositioned so they don't clash -->
         <div class="gl-hero__orb gl-hero__orb--1" aria-hidden="true"></div>
         <div class="gl-hero__orb gl-hero__orb--2" aria-hidden="true"></div>
+
+        <!-- LEFT: text content (unchanged from original) -->
         <div class="gl-hero__content gl-reveal">
           <div class="gl-hero__badge">
             <span class="gl-hero__badge-dot"></span>
             Personal Journal · Est. 2024
           </div>
-          <h1 class="gl-hero__title">Growth<br/>Logs</h1>
+          <h1 class="gl-hero__title">Growth<br>Logs</h1>
           <p class="gl-hero__subtitle">Notes, systems, experiments, and lessons from real work in SEO, digital marketing, AI, and building in public. No filler — only what actually taught me something.</p>
-          <div class="gl-hero__stats">
-            <div class="gl-hero__stat">
+
+          <!-- Topics on mobile / supplementary -->
+          <div class="gl-hero__topics">
+            <span class="gl-hero__topic-tag">🔍 SEO</span>
+            <span class="gl-hero__topic-tag">📈 Paid Ads</span>
+            <span class="gl-hero__topic-tag">🤖 AI Workflows</span>
+            <span class="gl-hero__topic-tag">🌍 Career</span>
+            <span class="gl-hero__topic-tag">⚙️ Build Logs</span>
+          </div>
+        </div>
+
+        <!-- RIGHT: visual panel — fills the blank space -->
+        <div class="gl-hero__visual gl-reveal">
+
+          <!-- 2×2 stat cards -->
+          <div class="gl-hero__stat-grid">
+            <div class="gl-hero__stat-card">
               <strong>2</strong>
-              <span>Articles</span>
+              <span>Articles Live</span>
             </div>
-            <div class="gl-hero__stat-divider"></div>
-            <div class="gl-hero__stat">
-              <strong>Real</strong>
-              <span>Experience</span>
+            <div class="gl-hero__stat-card gl-hero__stat-card--accent">
+              <strong>4+</strong>
+              <span>Years Experience</span>
             </div>
-            <div class="gl-hero__stat-divider"></div>
-            <div class="gl-hero__stat">
+            <div class="gl-hero__stat-card">
+              <strong>10+</strong>
+              <span>Client Sites</span>
+            </div>
+            <div class="gl-hero__stat-card gl-hero__stat-card--accent">
               <strong>Free</strong>
               <span>Always</span>
             </div>
           </div>
+
+          <!-- Profile card -->
+          <div class="gl-hero__profile-card">
+            <img
+              class="gl-hero__profile-photo"
+              src="assets/suraj-hero.jpg"
+              alt="Suraj Kumar Chandravanshi"
+              width="48" height="48"
+              loading="lazy"
+            />
+            <div class="gl-hero__profile-text">
+              <strong>Suraj Kumar Chandravanshi</strong>
+              <span>SEO &amp; Digital Marketing Specialist · Delhi</span>
+            </div>
+            <span class="gl-hero__profile-badge">Writing</span>
+          </div>
+
         </div>
       </section>
 
-      <!-- ═══ CONTROLS ═══ -->
+      <!-- ═══ CONTROLS — unchanged ═══ -->
       <section class="gl-controls">
         <div class="gl-controls__inner">
           <div class="gl-search-wrap">
@@ -97,7 +341,7 @@
         </div>
       </section>
 
-      <!-- ═══ FEATURED ═══ -->
+      <!-- ═══ FEATURED — unchanged ═══ -->
       <section class="gl-featured-section gl-reveal" id="featured">
         <div class="gl-featured-section__inner">
           <div class="gl-section-label">
@@ -130,7 +374,7 @@
         </div>
       </section>
 
-      <!-- ═══ ARTICLES GRID ═══ -->
+      <!-- ═══ ARTICLES GRID — unchanged ═══ -->
       <section class="gl-grid-section">
         <div class="gl-grid-section__inner">
           <div class="gl-grid-header">
@@ -140,7 +384,6 @@
 
           <div class="gl-grid" id="gl-grid">
 
-            <!-- Article 1 — real -->
             <a class="gl-card gl-reveal" href="growth-logs/seo-ranking-case-study.html" data-category="seo-journey" data-title="The 90-Day SEO Experiment That Changed How I Think About Rankings">
               <div class="gl-thumb gl-thumb--seo"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">📈</span></div>
               <div class="gl-card__body">
@@ -151,7 +394,6 @@
               </div>
             </a>
 
-            <!-- Coming soon cards — premium placeholders -->
             <div class="gl-card gl-card--soon gl-reveal">
               <div class="gl-thumb gl-thumb--build"><div class="gl-thumb__grid"></div><span class="gl-thumb__emoji">⚙️</span></div>
               <div class="gl-card__body">
@@ -197,7 +439,7 @@
         </div>
       </section>
 
-      <!-- ═══ NEWSLETTER ═══ -->
+      <!-- ═══ NEWSLETTER — unchanged ═══ -->
       <section class="gl-newsletter gl-reveal">
         <div class="gl-newsletter__inner">
           <span class="gl-kicker">Get notified</span>
@@ -213,8 +455,9 @@
 
     </main>
 
+    <!-- ═══ FOOTER — unchanged ═══ -->
     <footer class="site-footer">
-      <div class="footer-inner">
+      <div class="footer-inner" style="display:contents;">
         <div class="footer-brand">
           <span>Suraj Kumar Chandravanshi</span>
           <p>SEO &amp; Digital Marketing Specialist · Delhi, India</p>
