@@ -1,732 +1,750 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Suraj Kumar Chandravanshi — SEO &amp; Digital Marketing Specialist</title>
-    <meta name="description" content="Suraj Kumar Chandravanshi is a Delhi-based SEO and Digital Marketing Specialist with 4+ years of experience in organic growth, Google Ads, and content strategy." />
-    <link rel="canonical" href="https://surajkchandravanshi.vercel.app/about" />
-    <link rel="alternate" hreflang="en" href="https://surajkchandravanshi.vercel.app/about" />
-    <link rel="alternate" hreflang="x-default" href="https://surajkchandravanshi.vercel.app/about" />
-    <meta property="og:type" content="profile" />
-    <meta property="og:url" content="https://surajkchandravanshi.vercel.app/about" />
-    <meta property="og:title" content="About Suraj Kumar Chandravanshi — SEO &amp; Digital Marketing Specialist" />
-    <meta property="og:description" content="Suraj Kumar Chandravanshi is a Delhi-based SEO and Digital Marketing Specialist with 4+ years of experience helping B2B and B2C brands grow online." />
-    <meta property="og:image" content="https://surajkchandravanshi.vercel.app/assets/suraj-hero.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <link rel="stylesheet" href="styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Suraj Kumar Chandravanshi",
-      "alternateName": ["Suraj Chandravanshi", "Suraj Kumar"],
-      "url": "https://surajkchandravanshi.vercel.app/",
-      "image": "https://surajkchandravanshi.vercel.app/assets/suraj-hero.jpg",
-      "jobTitle": "SEO & Digital Marketing Specialist",
-      "description": "Suraj Kumar Chandravanshi is a Delhi-based SEO and Digital Marketing Specialist with over four years of hands-on experience helping B2B and B2C brands improve their online visibility, generate leads, and grow revenue through organic search, paid advertising, and content marketing.",
-      "email": "surajkrchandravanshi@gmail.com",
-      "telephone": "+91-9873922652",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Delhi",
-        "addressRegion": "Delhi",
-        "addressCountry": "IN"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/surajkofficial/",
-        "https://www.instagram.com/surajchandravanshi1008/"
-      ]
+  <title>About — Suraj Kumar Chandravanshi · SEO &amp; Digital Marketing Specialist</title>
+  <meta name="description" content="Learn about Suraj Kumar Chandravanshi — Delhi-based SEO and Digital Marketing Specialist with 4+ years of experience helping B2B and B2C brands grow online." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://surajkchandravanshi.vercel.app/about" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://surajkchandravanshi.vercel.app/about" />
+  <meta property="og:title" content="About Suraj Kumar Chandravanshi — SEO &amp; Digital Marketing Specialist" />
+  <meta property="og:description" content="4+ years helping B2B and B2C brands grow through organic search, paid ads, and data-driven digital marketing strategy." />
+  <meta property="og:image" content="https://surajkchandravanshi.vercel.app/assets/suraj-hero.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Suraj Kumar Chandravanshi",
+    "url": "https://surajkchandravanshi.vercel.app/",
+    "image": "https://surajkchandravanshi.vercel.app/assets/suraj-hero.jpg",
+    "jobTitle": "SEO & Digital Marketing Specialist",
+    "address": { "@type": "PostalAddress", "addressLocality": "Delhi", "addressCountry": "IN" },
+    "email": "surajkrchandravanshi@gmail.com",
+    "sameAs": ["https://www.linkedin.com/in/surajkofficial/"]
+  }
+  </script>
+
+  <style>
+    /* ── ABOUT PAGE SPECIFIC ─────────────────────────────────── */
+
+    .about-hero-band {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: clamp(40px, 6vw, 88px);
+      align-items: end;
+      padding: clamp(56px, 8vw, 104px) clamp(20px, 4vw, 60px) 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 100% 0%, rgba(166,124,58,0.06) 0%, transparent 60%),
+        var(--paper);
+      border-bottom: 1px solid var(--line);
     }
-    </script>
 
-    <style>
-      /* ── ABOUT PAGE LAYOUT ─────────────────────────────────────────── */
+    .about-hero-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: center 15%;
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      box-shadow: var(--shadow-lg);
+      display: block;
+    }
 
-      /* Hero band — photo left, name + kicker right */
-      .about-hero {
-        display: grid;
-        grid-template-columns: 260px 1fr;
-        gap: clamp(32px, 5vw, 72px);
-        align-items: end;
-        padding: clamp(56px, 8vw, 104px) clamp(18px, 4vw, 58px) 0;
-        border-bottom: 1px solid var(--line);
-        background:
-          radial-gradient(ellipse 60% 50% at 100% 0%, rgba(184,145,74,0.06) 0%, transparent 60%),
-          var(--paper);
+    .about-hero-meta {
+      padding-bottom: clamp(36px, 5vw, 56px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .about-hero-name {
+      font-family: "Lora", Georgia, serif;
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      font-weight: 600;
+      line-height: 1.06;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin: var(--space-3) 0 var(--space-4);
+    }
+
+    .about-hero-role {
+      font-family: "Inter", sans-serif;
+      font-size: var(--text-base);
+      font-weight: 500;
+      color: var(--muted);
+      margin-bottom: var(--space-6);
+    }
+
+    .about-hero-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    .about-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-full);
+      font-family: "Inter", sans-serif;
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--muted);
+      background: rgba(255,255,255,0.8);
+    }
+
+    .about-chip--accent {
+      color: var(--bronze);
+      border-color: var(--bronze-glow);
+      background: var(--bronze-pale);
+    }
+
+    /* Body layout */
+    .about-body-grid {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: clamp(40px, 6vw, 88px);
+      align-items: start;
+      padding: clamp(48px, 7vw, 88px) clamp(20px, 4vw, 60px);
+    }
+
+    /* Sidebar */
+    .about-sidebar {
+      position: sticky;
+      top: calc(var(--header-h) + 24px);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-8);
+    }
+
+    .sidebar-block-label {
+      font-family: "Inter", sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bronze);
+      margin-bottom: var(--space-3);
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+
+    .sidebar-block-label::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .sidebar-link {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      padding: var(--space-2) 0;
+      font-family: "Inter", sans-serif;
+      font-size: var(--text-sm);
+      color: var(--muted);
+      text-decoration: none;
+      transition: color var(--duration-fast) var(--ease);
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .sidebar-link:last-child { border-bottom: none; }
+
+    .sidebar-link:hover { color: var(--ink); }
+
+    .sidebar-link svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      fill: none;
+      stroke: var(--bronze);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .avail-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: 8px 14px;
+      border-radius: var(--radius-full);
+      background: rgba(10,107,98,0.08);
+      border: 1px solid rgba(10,107,98,0.18);
+      font-family: "Inter", sans-serif;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--teal);
+    }
+
+    .avail-pill::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--teal);
+      animation: pulse-dot 2s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+
+    /* Main content */
+    .about-main-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-section {
+      padding-bottom: clamp(36px, 5vw, 56px);
+      margin-bottom: clamp(36px, 5vw, 56px);
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .about-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .about-section-title {
+      font-family: "Lora", Georgia, serif;
+      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      margin-bottom: var(--space-5);
+    }
+
+    .about-prose {
+      font-size: clamp(var(--text-base), 1.6vw, var(--text-md));
+      line-height: 1.78;
+      color: var(--ink-soft);
+      margin-bottom: var(--space-4);
+    }
+
+    .about-prose:last-child { margin-bottom: 0; }
+
+    /* Experience list */
+    .exp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .exp-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: var(--space-6);
+      padding: var(--space-6) 0;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .exp-item:first-child { padding-top: 0; }
+    .exp-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .exp-date {
+      font-family: "Inter", sans-serif;
+      font-size: var(--text-xs);
+      font-weight: 700;
+      color: var(--bronze);
+      letter-spacing: 0.02em;
+      line-height: 1.5;
+      padding-top: 3px;
+    }
+
+    .exp-role {
+      font-family: "Inter", sans-serif;
+      font-size: var(--text-base);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+
+    .exp-company {
+      font-family: "Inter", sans-serif;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--teal);
+      margin-bottom: var(--space-3);
+    }
+
+    .exp-desc {
+      font-family: "Inter", sans-serif;
+      font-size: var(--text-sm);
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* Skills grid */
+    .skills-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3);
+    }
+
+    .skill-card {
+      padding: var(--space-5);
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      transition: border-color var(--duration) var(--ease), transform var(--duration) var(--ease);
+    }
+
+    .skill-card:hover {
+      border-color: var(--bronze-glow);
+      transform: translateY(-2px);
+    }
+
+    .skill-card-label {
+      font-family: "Inter", sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--bronze);
+      margin-bottom: var(--space-2);
+    }
+
+    .skill-card-desc {
+      font-family: "Inter", sans-serif;
+      font-size: var(--text-sm);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* Tools pill list */
+    .tools-pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-top: var(--space-2);
+    }
+
+    .tools-pill {
+      padding: 6px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-full);
+      font-family: "Inter", sans-serif;
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--ink-soft);
+      background: rgba(255,255,255,0.8);
+    }
+
+    /* Contact cards */
+    .contact-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3);
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      padding: var(--space-5);
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      text-decoration: none;
+      color: inherit;
+      transition: border-color var(--duration) var(--ease),
+                  transform var(--duration) var(--ease),
+                  box-shadow var(--duration) var(--ease);
+    }
+
+    .contact-card:hover {
+      border-color: var(--bronze-glow);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-card-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius);
+      background: var(--bronze-pale);
+      border: 1px solid var(--bronze-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--bronze);
+    }
+
+    .contact-card-icon svg {
+      width: 16px;
+      height: 16px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .contact-card-label {
+      font-family: "Inter", sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bronze);
+      margin-bottom: 2px;
+    }
+
+    .contact-card-value {
+      font-family: "Inter", sans-serif;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--ink);
+      overflow-wrap: anywhere;
+    }
+
+    /* ── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .about-hero-band {
+        grid-template-columns: 1fr;
+        padding-bottom: 0;
       }
 
-      .about-hero__photo-wrap {
-        position: relative;
+      .about-hero-photo {
+        aspect-ratio: 16/9;
+        max-height: 380px;
+        border-radius: var(--radius-md);
+        object-position: center 20%;
       }
 
-      .about-hero__photo-wrap img {
-        width: 100%;
-        aspect-ratio: 3 / 4;
-        object-fit: cover;
-        object-position: center 15%;
-        border-radius: 8px 8px 0 0;
-        display: block;
-        box-shadow: 0 24px 64px rgba(19,16,13,0.18);
+      .about-body-grid {
+        grid-template-columns: 1fr;
       }
 
-      .about-hero__meta {
-        padding-bottom: clamp(32px, 4vw, 52px);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      }
-
-      .about-hero__name {
-        font-family: "Lora", Georgia, serif;
-        font-size: clamp(2.6rem, 5vw, 4.4rem);
-        font-weight: 600;
-        line-height: 1.05;
-        letter-spacing: -0.025em;
-        color: var(--ink);
-        margin: 12px 0 16px;
-        /* Remove gradient — clean dark text */
-        background: none;
-        -webkit-background-clip: unset;
-        -webkit-text-fill-color: var(--ink);
-        background-clip: unset;
-      }
-
-      .about-hero__role {
-        font-family: "Inter", sans-serif;
-        font-size: 1rem;
-        font-weight: 500;
-        color: var(--muted);
-        margin: 0 0 28px;
-        letter-spacing: 0;
-      }
-
-      .about-hero__tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .about-hero__tag {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        padding: 7px 14px;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        font-family: "Inter", sans-serif;
-        font-size: 0.82rem;
-        font-weight: 500;
-        color: var(--ink-soft);
-        background: rgba(255,255,255,0.8);
-      }
-
-      .about-hero__tag--accent {
-        border-color: rgba(184,145,74,0.3);
-        background: rgba(184,145,74,0.06);
-        color: var(--bronze);
-        font-weight: 600;
-      }
-
-      /* ── BODY GRID ─────────────────────────────────────────────────── */
-      .about-body {
-        display: grid;
-        grid-template-columns: 260px 1fr;
-        gap: clamp(32px, 5vw, 72px);
-        padding: clamp(48px, 6vw, 80px) clamp(18px, 4vw, 58px);
-        align-items: start;
-      }
-
-      /* Sticky sidebar */
       .about-sidebar {
-        position: sticky;
-        top: 90px;
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-      }
-
-      .about-sidebar__block {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .about-sidebar__label {
-        font-family: "Inter", sans-serif;
-        font-size: 0.7rem;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--bronze);
-      }
-
-      .about-sidebar__label::after {
-        content: "";
-        display: block;
-        width: 20px;
-        height: 2px;
-        margin-top: 4px;
-        background: var(--bronze);
-        border-radius: 2px;
-      }
-
-      .about-sidebar__link {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-family: "Inter", sans-serif;
-        font-size: 0.88rem;
-        color: var(--muted);
-        text-decoration: none;
-        transition: color 150ms;
-      }
-
-      .about-sidebar__link:hover {
-        color: var(--ink);
-      }
-
-      .about-sidebar__link svg {
-        width: 14px;
-        height: 14px;
-        flex-shrink: 0;
-        fill: none;
-        stroke: currentColor;
-        stroke-width: 1.8;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-
-      .about-sidebar__avail {
-        display: inline-flex;
-        align-items: center;
-        gap: 7px;
-        padding: 8px 14px;
-        border-radius: 999px;
-        background: rgba(13,122,112,0.08);
-        border: 1px solid rgba(13,122,112,0.18);
-        font-family: "Inter", sans-serif;
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: var(--teal);
-      }
-
-      .about-sidebar__avail::before {
-        content: "";
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--teal);
-        flex-shrink: 0;
-        animation: pulse-dot 2s ease-in-out infinite;
-      }
-
-      /* ── MAIN CONTENT ───────────────────────────────────────────────── */
-      .about-main {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-      }
-
-      .about-section {
-        padding-bottom: clamp(36px, 5vw, 56px);
-        margin-bottom: clamp(36px, 5vw, 56px);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .about-section:last-child {
-        border-bottom: none;
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
-
-      .about-section h2 {
-        font-family: "Lora", Georgia, serif;
-        font-size: clamp(1.4rem, 2.5vw, 1.9rem);
-        font-weight: 600;
-        line-height: 1.2;
-        letter-spacing: -0.015em;
-        color: var(--ink);
-        margin: 0 0 18px;
-      }
-
-      .about-section p {
-        font-family: "Inter", sans-serif;
-        font-size: 1rem;
-        line-height: 1.78;
-        color: var(--ink-soft);
-        margin: 0 0 14px;
-        max-width: 680px;
-      }
-
-      .about-section p:last-child {
-        margin-bottom: 0;
-      }
-
-      /* Experience items */
-      .about-exp-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-      }
-
-      .about-exp-item {
-        display: grid;
-        grid-template-columns: 130px 1fr;
-        gap: 20px;
-        padding: 24px 0;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .about-exp-item:first-child {
-        padding-top: 0;
-      }
-
-      .about-exp-item:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-      }
-
-      .about-exp-date {
-        font-family: "Inter", sans-serif;
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: var(--bronze);
-        padding-top: 3px;
-        line-height: 1.4;
-      }
-
-      .about-exp-detail h3 {
-        font-family: "Inter", sans-serif;
-        font-size: 0.96rem;
-        font-weight: 700;
-        color: var(--ink);
-        margin: 0 0 3px;
-        letter-spacing: -0.01em;
-      }
-
-      .about-exp-company {
-        font-size: 0.85rem;
-        font-weight: 500;
-        color: var(--teal);
-        font-family: "Inter", sans-serif;
-        margin: 0 0 8px;
-      }
-
-      .about-exp-detail p {
-        font-size: 0.9rem;
-        color: var(--muted);
-        margin: 0;
-        max-width: none;
-        line-height: 1.65;
-      }
-
-      /* Skills grid */
-      .about-skills-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        margin-top: 4px;
-      }
-
-      .about-skill-card {
-        padding: 16px 18px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: rgba(255,255,255,0.7);
-        transition: border-color 150ms, transform 150ms;
-      }
-
-      .about-skill-card:hover {
-        border-color: rgba(184,145,74,0.3);
-        transform: translateY(-2px);
-      }
-
-      .about-skill-card__label {
-        font-family: "Inter", sans-serif;
-        font-size: 0.7rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--bronze);
-        margin-bottom: 5px;
-      }
-
-      .about-skill-card__desc {
-        font-family: "Inter", sans-serif;
-        font-size: 0.84rem;
-        color: var(--muted);
-        line-height: 1.5;
-        margin: 0;
-      }
-
-      /* Tools pill list */
-      .about-tools-list {
-        display: flex;
+        position: static;
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 4px;
+        gap: var(--space-6);
       }
 
-      .about-tools-list span {
-        padding: 7px 14px;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        font-family: "Inter", sans-serif;
-        font-size: 0.84rem;
-        font-weight: 500;
-        color: var(--ink-soft);
-        background: rgba(255,255,255,0.8);
+      .sidebar-block { min-width: 200px; }
+    }
+
+    @media (max-width: 600px) {
+      .skills-2col,
+      .contact-cards {
+        grid-template-columns: 1fr;
       }
 
-      /* Contact links */
-      .about-contact-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-top: 4px;
+      .exp-item {
+        grid-template-columns: 1fr;
+        gap: var(--space-2);
       }
 
-      .about-contact-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 14px 16px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: rgba(255,255,255,0.7);
-        text-decoration: none;
-        transition: border-color 150ms, background 150ms;
-      }
-
-      .about-contact-item:hover {
-        border-color: rgba(184,145,74,0.3);
-        background: rgba(255,255,255,0.95);
-      }
-
-      .about-contact-item svg {
-        width: 16px;
-        height: 16px;
-        fill: none;
-        stroke: var(--bronze);
-        stroke-width: 1.8;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        flex-shrink: 0;
-      }
-
-      .about-contact-item__text {
-        display: flex;
+      .about-sidebar {
         flex-direction: column;
-        gap: 1px;
       }
+    }
+  </style>
+</head>
 
-      .about-contact-item__label {
-        font-family: "Inter", sans-serif;
-        font-size: 0.7rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--bronze);
-      }
+<body>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#about-main">Skip to main content</a>
 
-      .about-contact-item__value {
-        font-family: "Inter", sans-serif;
-        font-size: 0.84rem;
-        font-weight: 500;
-        color: var(--ink);
-        overflow-wrap: anywhere;
-      }
+  <!-- ══ HEADER ══ -->
+  <header class="site-header" role="banner" data-header>
+    <a class="brand" href="/" aria-label="Suraj Kumar Chandravanshi — Home">
+      <span class="brand-mark">
+        <img src="assets/suraj-hero.jpg" alt="Suraj Kumar Chandravanshi" width="40" height="40" loading="eager" decoding="async" />
+      </span>
+      <span>
+        <span class="brand-name">Suraj Chandravanshi</span>
+        <span class="brand-role">SEO &amp; Digital Marketing</span>
+      </span>
+    </a>
 
-      /* ── RESPONSIVE ─────────────────────────────────────────────────── */
-      @media (max-width: 820px) {
-        .about-hero,
-        .about-body {
-          grid-template-columns: 1fr;
-        }
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
 
-        .about-hero__photo-wrap img {
-          aspect-ratio: 16 / 9;
-          border-radius: 8px;
-          object-position: center 20%;
-          max-height: 380px;
-        }
+    <nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+      <a class="nav-link" href="/#work">Work</a>
+      <a class="nav-link" href="/#services">Services</a>
+      <a class="nav-link" href="/#experience">Experience</a>
+      <a class="nav-link" href="/#skills">Skills</a>
+      <a class="nav-link active" href="/about">About</a>
+      <a class="nav-link" href="/growth-logs">Growth Logs</a>
+      <a class="nav-link nav-cta" href="/#contact">Let's Talk</a>
+    </nav>
+  </header>
 
-        .about-sidebar {
-          position: static;
-          flex-direction: row;
-          flex-wrap: wrap;
-          gap: 20px;
-        }
+  <main id="about-main">
 
-        .about-sidebar__block {
-          min-width: 180px;
-        }
+    <!-- ══ HERO BAND ══ -->
+    <section class="about-hero-band" aria-labelledby="about-name">
+      <div class="reveal">
+        <img
+          class="about-hero-photo"
+          src="assets/suraj-hero.jpg"
+          alt="Suraj Kumar Chandravanshi — SEO and Digital Marketing Specialist"
+          width="280"
+          height="373"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </div>
 
-        .about-skills-grid,
-        .about-contact-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
+      <div class="about-hero-meta reveal reveal-delay-2">
+        <p class="section-kicker">About</p>
+        <h1 class="about-hero-name" id="about-name">Suraj Kumar<br>Chandravanshi</h1>
+        <p class="about-hero-role">SEO &amp; Digital Marketing Specialist · Delhi, India</p>
+        <div class="about-hero-chips">
+          <span class="about-chip about-chip--accent">Open to Relocate</span>
+          <span class="about-chip">4+ Years Experience</span>
+          <span class="about-chip">B2B &amp; B2C</span>
+          <span class="about-chip">Germany · Australia · UAE</span>
+        </div>
+      </div>
+    </section>
 
-  <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <!-- ══ BODY ══ -->
+    <div class="about-body-grid">
 
-    <!-- ═══ HEADER — matches homepage exactly (photo brand-mark) ═══ -->
-    <header class="site-header" data-header>
-      <a class="brand" href="/" aria-label="Suraj Kumar Chandravanshi portfolio home">
-        <span class="brand-mark">
-          <img src="assets/suraj-hero.jpg" alt="Suraj Kumar Chandravanshi" width="48" height="48" loading="eager" decoding="async" />
-        </span>
-        <span>Suraj Chandravanshi</span>
+      <!-- SIDEBAR -->
+      <aside aria-label="Quick links and availability" class="reveal">
+
+        <div class="sidebar-block">
+          <span class="avail-pill">Available now</span>
+        </div>
+
+        <div class="sidebar-block" style="margin-top:var(--space-8);">
+          <p class="sidebar-block-label">Contact</p>
+          <a class="sidebar-link" href="mailto:surajkrchandravanshi@gmail.com">
+            <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            surajkrchandravanshi@gmail.com
+          </a>
+          <a class="sidebar-link" href="https://wa.me/919873922652" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M5.3 19 6.4 15.7a7.2 7.2 0 1 1 2.2 2.1z"/></svg>
+            +91 98739 22652
+          </a>
+          <a class="sidebar-link" href="https://www.linkedin.com/in/surajkofficial/" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/surajkofficial
+          </a>
+          <a class="sidebar-link" href="https://surajkchandravanshi.vercel.app/">
+            <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            Portfolio
+          </a>
+        </div>
+
+        <div class="sidebar-block">
+          <p class="sidebar-block-label">Location</p>
+          <a class="sidebar-link" href="#">
+            <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Delhi, India
+          </a>
+          <a class="sidebar-link" href="#">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20A14.5 14.5 0 0 0 12 2"/><path d="M2 12h20"/></svg>
+            Open to relocation
+          </a>
+        </div>
+
+        <div class="sidebar-block">
+          <p class="sidebar-block-label">Languages</p>
+          <a class="sidebar-link" href="#">
+            <svg viewBox="0 0 24 24"><path d="m5 8 6 6m-6 0 6-6"/><path d="M2 5h12M7 2h1"/><path d="m22 22-5-10-5 10M14 18h6"/></svg>
+            Hindi — Native
+          </a>
+          <a class="sidebar-link" href="#">
+            <svg viewBox="0 0 24 24"><path d="m5 8 6 6m-6 0 6-6"/><path d="M2 5h12M7 2h1"/><path d="m22 22-5-10-5 10M14 18h6"/></svg>
+            English — Professional
+          </a>
+          <a class="sidebar-link" href="#">
+            <svg viewBox="0 0 24 24"><path d="m5 8 6 6m-6 0 6-6"/><path d="M2 5h12M7 2h1"/><path d="m22 22-5-10-5 10M14 18h6"/></svg>
+            German — A1 (Learning)
+          </a>
+        </div>
+
+        <div class="sidebar-block">
+          <a class="btn btn-ghost" href="assets/suraj-cv.pdf" download style="width:100%; justify-content:center; font-size:var(--text-sm);">
+            <svg viewBox="0 0 24 24" style="width:14px;height:14px;" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+        </div>
+
+      </aside>
+
+      <!-- MAIN -->
+      <div class="about-main-content reveal reveal-delay-1">
+
+        <section class="about-section" aria-labelledby="about-who">
+          <h2 class="about-section-title" id="about-who">Who is Suraj Kumar Chandravanshi?</h2>
+          <p class="about-prose">Suraj Kumar Chandravanshi is a Delhi-based SEO and Digital Marketing Specialist with over four years of hands-on professional experience. He helps B2B and B2C brands improve their online visibility, generate qualified leads, and grow revenue through data-driven digital marketing strategies.</p>
+          <p class="about-prose">He specialises in organic search engine optimisation, Google Ads campaign management, Meta advertising, social media strategy, WordPress content publishing, and marketing performance reporting. He has managed digital marketing for more than ten client websites across a range of industries.</p>
+        </section>
+
+        <section class="about-section" aria-labelledby="about-exp">
+          <h2 class="about-section-title" id="about-exp">Professional Experience</h2>
+          <div class="exp-list">
+            <div class="exp-item">
+              <p class="exp-date">Oct 2020<br>– Jan 2024</p>
+              <div>
+                <p class="exp-role">SEO Executive &amp; Social Media Manager</p>
+                <p class="exp-company">AT Digital Work Agency · Delhi, India</p>
+                <p class="exp-desc">Managed SEO campaigns, paid advertising, social media accounts, and client reporting for multiple B2B and B2C clients simultaneously across 3+ years. Delivered consistent organic growth and ROAS improvements across diverse industries.</p>
+              </div>
+            </div>
+            <div class="exp-item">
+              <p class="exp-date">2021 – 2023</p>
+              <div>
+                <p class="exp-role">Co-Founder &amp; Digital Marketing Lead</p>
+                <p class="exp-company">Independent Venture · Delhi, India</p>
+                <p class="exp-desc">Responsible for client acquisition, digital strategy, and end-to-end delivery of SEO and paid advertising services for small and medium-sized businesses. Built systems for multi-channel campaign delivery.</p>
+              </div>
+            </div>
+            <div class="exp-item">
+              <p class="exp-date">Present</p>
+              <div>
+                <p class="exp-role">Freelance SEO &amp; Marketing Consultant</p>
+                <p class="exp-company">Independent · Remote</p>
+                <p class="exp-desc">Working with select clients on SEO, Google Ads, and content strategy. Actively seeking full-time opportunities internationally. Preparing IELTS and learning German (A1).</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-section" aria-labelledby="about-skills-sec">
+          <h2 class="about-section-title" id="about-skills-sec">Skills &amp; Expertise</h2>
+          <div class="skills-2col">
+            <div class="skill-card">
+              <p class="skill-card-label">SEO</p>
+              <p class="skill-card-desc">On-page, technical audits, keyword research, link building, competitor analysis, content strategy.</p>
+            </div>
+            <div class="skill-card">
+              <p class="skill-card-label">Paid Advertising</p>
+              <p class="skill-card-desc">Google Ads, Meta Ads (Facebook &amp; Instagram), audience targeting, A/B testing, ROAS reporting.</p>
+            </div>
+            <div class="skill-card">
+              <p class="skill-card-label">Social Media</p>
+              <p class="skill-card-desc">Content calendars, account management, brand engagement, organic growth — Instagram, LinkedIn, Facebook.</p>
+            </div>
+            <div class="skill-card">
+              <p class="skill-card-label">Analytics &amp; Reporting</p>
+              <p class="skill-card-desc">GA4, Google Search Console, SEMrush, Ahrefs, Looker Studio dashboards.</p>
+            </div>
+            <div class="skill-card">
+              <p class="skill-card-label">Content Marketing</p>
+              <p class="skill-card-desc">SEO blog writing, WordPress publishing, Canva visuals, conversion copywriting.</p>
+            </div>
+            <div class="skill-card">
+              <p class="skill-card-label">Web &amp; UI/UX</p>
+              <p class="skill-card-desc">WordPress development, landing page design, Core Web Vitals optimisation, UI/UX design.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-section" aria-labelledby="about-tools-sec">
+          <h2 class="about-section-title" id="about-tools-sec">Tools &amp; Platforms</h2>
+          <div class="tools-pill-list">
+            <span class="tools-pill">Google Analytics 4</span>
+            <span class="tools-pill">Google Search Console</span>
+            <span class="tools-pill">Google Ads Manager</span>
+            <span class="tools-pill">Meta Ads Manager</span>
+            <span class="tools-pill">SEMrush</span>
+            <span class="tools-pill">Ahrefs</span>
+            <span class="tools-pill">WordPress</span>
+            <span class="tools-pill">Canva</span>
+            <span class="tools-pill">Looker Studio</span>
+            <span class="tools-pill">Google Sheets</span>
+            <span class="tools-pill">Microsoft Office</span>
+          </div>
+        </section>
+
+        <section class="about-section" aria-labelledby="about-location-sec">
+          <h2 class="about-section-title" id="about-location-sec">Location &amp; Availability</h2>
+          <p class="about-prose">Based in Delhi, India. Actively seeking full-time employment, freelance projects, and remote work opportunities. Open to international relocation — researching opportunities in Germany, Australia, and the UAE.</p>
+          <p class="about-prose">Currently studying for IELTS certification and learning German at A1 beginner level to support international career goals.</p>
+        </section>
+
+        <section class="about-section" aria-labelledby="about-contact-sec">
+          <h2 class="about-section-title" id="about-contact-sec">Get in Touch</h2>
+          <div class="contact-cards">
+            <a class="contact-card" href="mailto:surajkrchandravanshi@gmail.com">
+              <div class="contact-card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+              <div><p class="contact-card-label">Email</p><p class="contact-card-value">surajkrchandravanshi@gmail.com</p></div>
+            </a>
+            <a class="contact-card" href="https://wa.me/919873922652" target="_blank" rel="noreferrer">
+              <div class="contact-card-icon"><svg viewBox="0 0 24 24"><path d="M5.3 19 6.4 15.7a7.2 7.2 0 1 1 2.2 2.1z"/></svg></div>
+              <div><p class="contact-card-label">WhatsApp</p><p class="contact-card-value">+91 98739 22652</p></div>
+            </a>
+            <a class="contact-card" href="https://www.linkedin.com/in/surajkofficial/" target="_blank" rel="noreferrer">
+              <div class="contact-card-icon"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+              <div><p class="contact-card-label">LinkedIn</p><p class="contact-card-value">linkedin.com/in/surajkofficial</p></div>
+            </a>
+            <a class="contact-card" href="https://surajkchandravanshi.vercel.app/">
+              <div class="contact-card-icon"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+              <div><p class="contact-card-label">Portfolio</p><p class="contact-card-value">surajkchandravanshi.vercel.app</p></div>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-name">Suraj Kumar Chandravanshi</p>
+        <p class="footer-sub">SEO &amp; Digital Marketing Specialist · Delhi, India</p>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="/">Home</a>
+          <a href="/growth-logs">Growth Logs</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+        <div class="footer-socials" aria-label="Social links">
+          <a class="footer-social" href="https://www.linkedin.com/in/surajkofficial/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="footer-social" href="mailto:surajkrchandravanshi@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Suraj Kumar Chandravanshi. All rights reserved.</p>
+      <a class="back-top" href="#about-main">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+        Back to top
       </a>
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" data-nav>
-        <a href="/#work">Work</a>
-        <a href="/#services">Services</a>
-        <a href="/#experience">Experience</a>
-        <a href="/#skills">Skills</a>
-        <a href="/growth-logs">Growth Logs</a>
-        <a href="/#contact">Contact</a>
-      </nav>
-    </header>
+    </div>
+  </footer>
 
-    <main id="main-content">
+  <a class="floating-wa" href="https://wa.me/919873922652" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
+    <span class="floating-wa-icon" aria-hidden="true">💬</span>
+    <strong>WhatsApp</strong>
+  </a>
 
-      <!-- ═══ ABOUT HERO — photo + name, aligned grid ═══ -->
-      <section class="about-hero">
-        <div class="about-hero__photo-wrap">
-          <img
-            src="assets/suraj-hero.jpg"
-            alt="Suraj Kumar Chandravanshi — SEO and Digital Marketing Specialist based in Delhi, India"
-            fetchpriority="high"
-            decoding="async"
-          />
-        </div>
-        <div class="about-hero__meta">
-          <span class="section-kicker">About</span>
-          <h1 class="about-hero__name">Suraj Kumar<br>Chandravanshi</h1>
-          <p class="about-hero__role">SEO &amp; Digital Marketing Specialist · Delhi, India</p>
-          <div class="about-hero__tags">
-            <span class="about-hero__tag--accent about-hero__tag">Open to Relocate</span>
-            <span class="about-hero__tag">4+ Years Experience</span>
-            <span class="about-hero__tag">B2B &amp; B2C</span>
-            <span class="about-hero__tag">Germany · Australia · UAE</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══ ABOUT BODY — sticky sidebar + main content ═══ -->
-      <div class="about-body">
-
-        <!-- Sidebar -->
-        <aside class="about-sidebar" aria-label="Quick links and availability">
-
-          <div class="about-sidebar__block">
-            <span class="about-sidebar__avail">Available now</span>
-          </div>
-
-          <div class="about-sidebar__block">
-            <p class="about-sidebar__label">Contact</p>
-            <a class="about-sidebar__link" href="mailto:surajkrchandravanshi@gmail.com">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              surajkrchandravanshi@gmail.com
-            </a>
-            <a class="about-sidebar__link" href="https://wa.me/919873922652" target="_blank" rel="noreferrer">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.3 19 6.4 15.7a7.2 7.2 0 1 1 2.2 2.1z"/></svg>
-              +91 98739 22652
-            </a>
-            <a class="about-sidebar__link" href="https://www.linkedin.com/in/surajkofficial/" target="_blank" rel="noreferrer">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              linkedin.com/in/surajkofficial
-            </a>
-          </div>
-
-          <div class="about-sidebar__block">
-            <p class="about-sidebar__label">Location</p>
-            <a class="about-sidebar__link" href="#">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              Delhi, India
-            </a>
-            <a class="about-sidebar__link" href="#">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-              Open to relocation
-            </a>
-          </div>
-
-          <div class="about-sidebar__block">
-            <p class="about-sidebar__label">Languages</p>
-            <a class="about-sidebar__link" href="#">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
-              Hindi — Native
-            </a>
-            <a class="about-sidebar__link" href="#">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
-              English — Intermediate
-            </a>
-            <a class="about-sidebar__link" href="#">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
-              German — A1 Beginner
-            </a>
-          </div>
-
-        </aside>
-
-        <!-- Main content -->
-        <main class="about-main">
-
-          <section class="about-section" aria-labelledby="about-who">
-            <h2 id="about-who">Who is Suraj Kumar Chandravanshi?</h2>
-            <p>
-              Suraj Kumar Chandravanshi is a Delhi-based SEO and Digital Marketing Specialist with over four years of hands-on professional experience. He helps B2B and B2C brands improve their online visibility, generate qualified leads, and grow revenue through data-driven digital marketing strategies.
-            </p>
-            <p>
-              He specialises in organic search engine optimisation (SEO), Google Ads campaign management, Meta advertising (Facebook and Instagram), social media strategy, WordPress content publishing, and marketing performance reporting. He has managed digital marketing for more than ten client websites across a range of industries.
-            </p>
-          </section>
-
-          <section class="about-section" aria-labelledby="about-experience">
-            <h2 id="about-experience">Professional Experience</h2>
-            <div class="about-exp-list">
-              <div class="about-exp-item">
-                <span class="about-exp-date">Oct 2020 –<br>Jan 2024</span>
-                <div class="about-exp-detail">
-                  <h3>SEO Executive &amp; Social Media Manager</h3>
-                  <p class="about-exp-company">AT Digital Work Agency · Delhi, India</p>
-                  <p>Managed SEO campaigns, paid advertising, social media accounts, and client reporting for multiple B2B and B2C clients simultaneously across 3+ years.</p>
-                </div>
-              </div>
-              <div class="about-exp-item">
-                <span class="about-exp-date">2021 – 2023</span>
-                <div class="about-exp-detail">
-                  <h3>Co-Founder &amp; Digital Marketing Lead</h3>
-                  <p class="about-exp-company">Independent Business Venture · Delhi, India</p>
-                  <p>Responsible for client acquisition, digital strategy, and end-to-end delivery of SEO and paid advertising services for small and medium-sized businesses.</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="about-section" aria-labelledby="about-skills">
-            <h2 id="about-skills">Skills &amp; Expertise</h2>
-            <div class="about-skills-grid">
-              <div class="about-skill-card">
-                <p class="about-skill-card__label">SEO</p>
-                <p class="about-skill-card__desc">On-page SEO, technical audits, keyword research, link building, competitor analysis, and content strategy.</p>
-              </div>
-              <div class="about-skill-card">
-                <p class="about-skill-card__label">Paid Advertising</p>
-                <p class="about-skill-card__desc">Google Ads setup and optimisation, Meta Ads (Facebook &amp; Instagram), audience targeting, A/B testing, and ROAS-focused reporting.</p>
-              </div>
-              <div class="about-skill-card">
-                <p class="about-skill-card__label">Social Media</p>
-                <p class="about-skill-card__desc">Content calendars, account management, brand engagement, and organic growth across Instagram, LinkedIn, and Facebook.</p>
-              </div>
-              <div class="about-skill-card">
-                <p class="about-skill-card__label">Analytics &amp; Reporting</p>
-                <p class="about-skill-card__desc">Google Analytics, Google Search Console, SEMrush, Ahrefs, and Google Sheets dashboards.</p>
-              </div>
-              <div class="about-skill-card">
-                <p class="about-skill-card__label">Content Marketing</p>
-                <p class="about-skill-card__desc">SEO blog writing, WordPress publishing, Canva visuals, and conversion-focused copywriting.</p>
-              </div>
-              <div class="about-skill-card">
-                <p class="about-skill-card__label">Web &amp; UI</p>
-                <p class="about-skill-card__desc">Website development, UI/UX design, HTML/CSS, and WordPress customisation.</p>
-              </div>
-            </div>
-          </section>
-
-          <section class="about-section" aria-labelledby="about-tools">
-            <h2 id="about-tools">Tools &amp; Platforms</h2>
-            <div class="about-tools-list">
-              <span>Google Analytics</span>
-              <span>Google Search Console</span>
-              <span>Google Ads Manager</span>
-              <span>Meta Ads Manager</span>
-              <span>SEMrush</span>
-              <span>Ahrefs</span>
-              <span>WordPress</span>
-              <span>Canva</span>
-              <span>Google Sheets</span>
-              <span>Microsoft Office</span>
-            </div>
-          </section>
-
-          <section class="about-section" aria-labelledby="about-location">
-            <h2 id="about-location">Location &amp; Availability</h2>
-            <p>
-              Based in Delhi, India. Actively seeking full-time employment, freelance projects, and remote work opportunities. Open to international relocation — researching opportunities in Germany, Australia, and the UAE.
-            </p>
-            <p>
-              Currently studying for IELTS certification and learning German at A1 beginner level.
-            </p>
-          </section>
-
-          <section class="about-section" aria-labelledby="about-contact">
-            <h2 id="about-contact">Get in Touch</h2>
-            <div class="about-contact-grid">
-              <a class="about-contact-item" href="mailto:surajkrchandravanshi@gmail.com">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                <div class="about-contact-item__text">
-                  <span class="about-contact-item__label">Email</span>
-                  <span class="about-contact-item__value">surajkrchandravanshi@gmail.com</span>
-                </div>
-              </a>
-              <a class="about-contact-item" href="https://wa.me/919873922652" target="_blank" rel="noreferrer">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.3 19 6.4 15.7a7.2 7.2 0 1 1 2.2 2.1z"/></svg>
-                <div class="about-contact-item__text">
-                  <span class="about-contact-item__label">WhatsApp</span>
-                  <span class="about-contact-item__value">+91 98739 22652</span>
-                </div>
-              </a>
-              <a class="about-contact-item" href="https://www.linkedin.com/in/surajkofficial/" target="_blank" rel="noreferrer">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                <div class="about-contact-item__text">
-                  <span class="about-contact-item__label">LinkedIn</span>
-                  <span class="about-contact-item__value">linkedin.com/in/surajkofficial</span>
-                </div>
-              </a>
-              <a class="about-contact-item" href="https://surajkchandravanshi.vercel.app/">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-                <div class="about-contact-item__text">
-                  <span class="about-contact-item__label">Portfolio</span>
-                  <span class="about-contact-item__value">surajkchandravanshi.vercel.app</span>
-                </div>
-              </a>
-            </div>
-          </section>
-
-        </main>
-      </div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-inner" style="display:contents;">
-        <div class="footer-brand">
-          <span>Suraj Kumar Chandravanshi</span>
-          <p>SEO &amp; Digital Marketing Specialist · Delhi, India</p>
-        </div>
-        <div class="footer-socials" aria-label="Social media links">
-          <a href="https://www.linkedin.com/in/surajkofficial/" target="_blank" rel="noreferrer" aria-label="Suraj Chandravanshi on LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="mailto:surajkrchandravanshi@gmail.com" aria-label="Email Suraj Kumar Chandravanshi">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
-          </a>
-        </div>
-        <a class="back-top" href="#main-content">↑ Back to top</a>
-      </div>
-    </footer>
-
-    <script src="script.js" defer></script>
-  </body>
+  <script src="js/main.js" defer></script>
+</body>
 </html>

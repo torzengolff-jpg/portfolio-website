@@ -1,0 +1,342 @@
+/* ================================================================
+   UTILITIES.CSS — Utility Classes
+   ================================================================ */
+
+/* Display */
+.d-none { display: none; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+
+/* Text */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-muted { color: var(--muted); }
+.text-bronze { color: var(--bronze); }
+.text-teal { color: var(--teal); }
+.text-cream { color: var(--cream); }
+.text-sm { font-size: var(--text-sm); }
+.text-xs { font-size: var(--text-xs); }
+.text-lg { font-size: var(--text-lg); }
+.font-serif { font-family: "Lora", Georgia, serif; }
+.font-sans { font-family: "Inter", sans-serif; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.italic { font-style: italic; }
+
+/* Spacing */
+.mt-4 { margin-top: var(--space-4); }
+.mt-6 { margin-top: var(--space-6); }
+.mt-8 { margin-top: var(--space-8); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-6 { margin-bottom: var(--space-6); }
+.mb-8 { margin-bottom: var(--space-8); }
+
+/* Max width */
+.max-w-sm { max-width: 480px; }
+.max-w-md { max-width: 640px; }
+.max-w-lg { max-width: 860px; }
+
+/* Visually hidden (accessible) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ================================================================
+   RESPONSIVE.CSS — Mobile-First Breakpoints
+   ================================================================ */
+
+/* ── TABLET (max 1024px) ─────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: clamp(48px, 8vw, 80px);
+    padding-bottom: clamp(48px, 8vw, 80px);
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-social-proof {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-inline: auto;
+  }
+
+  .hero-card--metric {
+    display: none;
+  }
+
+  .hero-card--avail {
+    position: static;
+    margin-top: var(--space-4);
+    width: 100%;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .metric-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .metric-item:nth-child(3) {
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .metric-item:nth-child(4) {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-right: none;
+  }
+
+  .case-card {
+    grid-template-columns: 1fr;
+  }
+
+  .case-card--alt .case-visual {
+    order: 0;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: clamp(32px, 5vw, 56px);
+  }
+
+  .about-photo-wrap {
+    max-width: 440px;
+    margin-inline: auto;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: clamp(32px, 5vw, 56px);
+  }
+
+  .skills-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline::before {
+    left: 100px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 100px 1fr;
+  }
+
+  .timeline-dot {
+    left: 92px;
+  }
+}
+
+/* ── MOBILE (max 768px) ──────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    --header-h: 60px;
+  }
+
+  /* Header */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: var(--space-3);
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    z-index: 99;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav .nav-link {
+    padding: 12px 14px;
+    border-radius: var(--radius);
+    font-size: var(--text-base);
+  }
+
+  .site-nav .nav-cta {
+    margin-left: 0;
+    margin-top: var(--space-2);
+    text-align: center;
+  }
+
+  /* Hero */
+  .hero-photo-frame {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 10vw, 3.2rem);
+  }
+
+  /* Metrics */
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Cases */
+  .case-results {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Timeline */
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .timeline-dot {
+    display: none;
+  }
+
+  .timeline-date {
+    text-align: left;
+  }
+
+  /* Footer */
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .footer-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-2);
+    text-align: center;
+  }
+
+  /* WhatsApp */
+  .floating-wa strong {
+    display: none;
+  }
+
+  .floating-wa {
+    padding: 14px;
+    border-radius: 50%;
+  }
+
+  .floating-wa-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ── SMALL MOBILE (max 480px) ────────────────────────────────── */
+@media (max-width: 480px) {
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .case-results {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.65rem;
+  }
+
+  .about-photo-frame {
+    display: none;
+  }
+}
+
+/* ── ULTRA-WIDE (min 1440px) ─────────────────────────────────── */
+@media (min-width: 1440px) {
+  :root {
+    --container: 1320px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr min(540px, 40%);
+  }
+}
+
+/* ── REDUCED MOTION ──────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

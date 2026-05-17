@@ -1,37 +1,75 @@
+# Suraj Kumar Chandravanshi — Portfolio
 
-Suraj Kumar Chandravanshi I help brands improve search visibility, run smarter paid campaigns, and build social media systems that turn attention into measurable growth.
+Production portfolio system. Modular HTML/CSS/JS architecture.
 
-# 🌐 Portfolio Website
+## Project Structure
 
-## 🚀 Live Demo
+```
+suraj-portfolio/
+├── index.html              ← Homepage (all sections)
+├── about.html              ← About page
+├── growth-logs.html        ← Growth Logs listing page
+├── css/
+│   ├── base.css            ← Design tokens, reset, typography
+│   ├── layout.css          ← Container, grid, header, footer
+│   ├── components.css      ← All section components
+│   └── responsive.css      ← Utilities + breakpoints
+├── js/
+│   └── main.js             ← All interactions
+└── assets/
+    ├── suraj-hero.jpg      ← Your photo (required)
+    ├── suraj-cv.pdf        ← Your CV (required)
+    └── favicon.svg         ← Site favicon
+```
 
-https://surajkchandravanshi.vercel.app/
+## Deploy to Vercel
 
-## 📌 Overview
+1. Upload entire folder to your GitHub repo
+2. Connect repo to Vercel
+3. Set output directory to `/` (root)
+4. Deploy
 
-This is my personal portfolio website built to showcase my skills in web development and digital marketing.
+## Required Assets (add these yourself)
 
+- `assets/suraj-hero.jpg` — Your professional photo (recommend 800×1000px, JPG, <200KB)
+- `assets/suraj-cv.pdf` — Your CV
+- `assets/favicon.svg` — Favicon (32×32 SVG)
 
-## 🛠️ Tech Stack
+## Design System
 
-* HTML
-* CSS
-* JavaScript
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--ink` | `#111009` | Primary text |
+| `--paper` | `#f6f2ea` | Page background |
+| `--bronze` | `#a67c3a` | Accent color |
+| `--teal` | `#0a6b62` | Secondary accent |
+| `--line` | `#ddd4c0` | Borders |
 
-## ⚡ Features
+## Typography
 
-* Fully responsive design
-* Clean and modern UI
-* Fast loading performance
-* SEO-friendly structure
+- **Lora** (Google Fonts) — Headings, pull quotes
+- **Inter** (Google Fonts) — Body, UI, nav
 
-## 🎯 Purpose
+## Key Features
 
-To demonstrate my ability to build high-performing websites that help businesses grow online.
+- Mobile-first responsive layout
+- Smooth scroll reveal animations
+- Animated skill bars
+- Counter animations on metrics
+- Mobile hamburger nav
+- Scroll progress bar
+- Search + filter on Growth Logs
+- Contact form with feedback state
+- Schema markup (Person)
+- Open Graph meta tags
+- Accessible (ARIA labels, focus states, skip link, semantic HTML)
 
-## 📸 Preview
+## Customisation
 
-<img width="1427" height="743" alt="image" src="https://github.com/user-attachments/assets/fef79884-b3b1-4373-91dd-f4425cde91a3" />
+**Change accent color:** Update `--bronze` in `css/base.css`
 
+**Add a case study:** Duplicate `.case-card` block in `index.html`
 
+**Add a Growth Log article:** Duplicate `.gl-card` block in `growth-logs.html`
 
+**Update contact form endpoint:** Replace the `setTimeout` simulation in `js/main.js` → `initContactForm()` with a real fetch to Formspree, EmailJS, or your API.
