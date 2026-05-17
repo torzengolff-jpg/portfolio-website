@@ -114,4 +114,39 @@ ul, ol { list-style: none; }
 h1,h2,h3,h4,h5 { font-weight: 600; line-height: 1.2; color: var(--charcoal); }
 button { font-family: inherit; cursor: pointer; }
 input, textarea, select { font-family: inherit; }
+
+/* ── 23. UTILITIES ────────────────────────────────────────────────── */
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+.text-bronze { color: var(--bronze); }
+.text-muted  { color: var(--text-3); }
+ 
+/* ── 24. ACCESSIBILITY ────────────────────────────────────────────── */
+:focus-visible { outline: 2px solid var(--bronze); outline-offset: 3px; border-radius: var(--r-sm); }
+::selection    { background: var(--bronze-dim); color: var(--charcoal); }
+ 
+/* ── 25. SCROLLBAR ────────────────────────────────────────────────── */
+::-webkit-scrollbar              { width: 5px; }
+::-webkit-scrollbar-track        { background: var(--ivory-2); }
+::-webkit-scrollbar-thumb        { background: var(--bronze); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover  { background: var(--bronze-light); }
+ 
+/* ── 26. REDUCED MOTION ───────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
+ 
+/* ── 27. PRINT ────────────────────────────────────────────────────── */
+@media print {
+  .site-header, .floating-cta, .scroll-progress,
+  .nav-toggle, .mobile-nav, .theme-toggle { display: none !important; }
+  body { background: white; color: black; }
+}
  
